@@ -1,0 +1,79 @@
+.project{
+    background: var(--black-color);
+    /* height: 500px; */
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--white-color);
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.project-title h2{
+    font-weight: 800;
+    font-size: 35px;
+    width: 40%;
+}
+.project-title h2 span{
+    color: var(--orange-color);
+}
+.project-title button{
+    margin: 20px 30px;
+}
+.project-shows {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+.show {
+    width: 32%; 
+    height: 470px;
+    position: relative;
+    border: 1.5px solid white;
+    border-radius: 40px;
+}
+.show img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+.caption{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(241, 118, 42, 0.3);
+    opacity: 0;
+    transition: 0.7s;
+    padding-top: 100%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+}
+.show:hover .caption{
+    opacity: 1;
+    padding-top: 40%;
+}
+.caption h2{
+    font-weight: 800;
+    font-size: 25px;
+    color: var(--orange-color);
+}
+.caption p{
+    font-weight: 600;
+    font-size: 30px;
+}
+.caption span {
+    font-weight: 800;
+    font-size: 50px;
+    color: var(--orange-color);
+    text-align: center;
+    margin-bottom: 50px; 
+    cursor: pointer;
+}

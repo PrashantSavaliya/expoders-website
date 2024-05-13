@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  --orange-color: #ff3b00;
+  --white-color: #fceded;
+  --black-color: #050a1e;
+}
+
+body {
+  background: #F5F5F5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.container {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.btn{
+  background: var(--orange-color);
+  color: var(--white-color);
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in 0.4s;
+}
+
+.btn:hover{
+  background: var(--white-color);
+  border: 1px solid var(--orange-color);
+  color: var(--black-color);
+}
+
+.btn img{
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+}
+
+.plus-icon{
+  margin-left: 7px;
+  font-size: 25px;
+}
+
+/*----------Media Query----------*/
+
+@media (max-width: 1200px){
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .btn{
+    padding: 14px 22px;
+  }
+}

@@ -1,0 +1,94 @@
+.strategy {
+    background: var(--black-color);
+    margin-top: 50px;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+.right-strategy {
+    margin-bottom: 50px;
+    height: 100%;
+    width: 45%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.right-strategy img {
+    border: 1.5px solid white;
+    border-radius: 40px;
+}
+.left-strategy {
+    color: var(--white-color);
+    margin-top: 70px;
+    width: 45%;
+}
+.left-strategy h1 {
+    margin-top: 50px;
+    font-weight: 800;
+}
+
+.left-strategy h1 span {
+    color: var(--orange-color);
+}
+
+.left-strategy p {
+    margin-top: 40px;
+    letter-spacing: 1px;
+    color: rgb(202, 198, 198);
+}
+
+
+
+/* strategy-bar */
+.strategy-bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.bar {
+    width: 100%; 
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.fill {
+    margin-top: 7px;
+    height: 5px;
+    background-color: white; 
+    border-radius: 10px;
+    position: relative;
+    overflow: visible; 
+}
+
+.percentage {
+    position: absolute;
+    top: -20px;
+    left: calc(100% + 5px);
+    color: var(--orange-color);
+}
+
+.fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--orange-color); 
+    border-radius: 10px;
+    transition: width 0.5s; 
+}
+
+#business-strategy .fill::after {
+    width: 65%;
+}
+
+#technology-consulting .fill::after {
+    width: 90%; 
+}
+
+#product-development .fill::after {
+    width: 80%; 
+}

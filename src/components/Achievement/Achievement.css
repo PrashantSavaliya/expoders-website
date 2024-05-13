@@ -1,0 +1,106 @@
+.forall{
+    background: var(--black-color);
+    /* background-color: antiquewhite; */
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 20%;
+    width: 100%;
+    height:100%;
+}
+
+.achievement {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black-color);
+    border-top-left-radius: 30%;
+}
+
+.left-side-achievement {
+    margin-top: 50px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    background-size: cover;
+}
+
+.left-side-achievement img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}   
+
+.right-side-achievement {
+    width: 50%;
+    color: var(--white-color);
+}
+
+.right-top p{
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.right-top h2 {
+    color: white; 
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 35px;
+}
+.right-top h2 span{
+    color: var(--orange-color);
+}
+
+.right-bottom ul {
+    padding-top: 20px;
+    padding-left: 20px; 
+    list-style: none;
+    line-height: 2;
+}
+.right-bottom div{
+    font-size: 25px;
+    font-weight: 500;
+}
+.right-bottom span{
+    color: var(--orange-color);
+}
+.right-bottom button{
+    margin-top: 20px;
+}
+
+.plus-icon{
+    margin-left: 7px;
+    font-size: 25px;
+}
+
+.achievement-list{
+    height: fit-content;
+    background: var(--black-color);
+    color: var(--white-color);
+    border-bottom-right-radius: 80%;
+}
+.achievement-list h2{
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    margin: 60px auto;
+}
+.lists{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.list h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.list p{
+    margin-bottom: 50px;
+}
+.list h1 span{
+    color: var(--orange-color);
+}
+.check-mark{
+    color: var(--orange-color);
+    margin-right: 5px;
+}

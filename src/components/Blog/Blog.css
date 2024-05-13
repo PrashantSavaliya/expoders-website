@@ -1,0 +1,101 @@
+.blog{
+    margin-top: 70px;
+}
+.blog-title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.blog-title h2{
+    font-weight: 800;
+    font-size: 35px;
+    width: 40%;
+}
+.blog-title h2 span{
+    color: var(--orange-color);
+}
+.blog-title button{
+    margin: 20px 30px;
+}
+
+.blogs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.blog-item{
+    margin-right: 3%;
+    transition: all ease 0.7s;
+}
+.blog-item:hover{
+    box-shadow: 0 4px 6px rgba(214, 121, 121, 0.4);
+}
+.blog-item:hover .blog-body p{
+    color: var(--orange-color);
+}
+.blog-header{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    transition: all ease 0.7s;
+    z-index: 1;
+}
+.blog-header img {
+    width: 100%;
+    height: auto;
+    transition: transform 1.2s;
+}
+.blog-header button {
+    position: absolute;
+    top: 5%;
+    left: 5%; 
+    z-index: 2; 
+    font-size: 15px;
+    padding: 10px 10px;
+}
+.blog-header:hover img {
+    transform: scale(1.1); 
+}
+.blog-body div{
+    margin-top: 10%;
+    margin-left: 10%
+}
+.blog-body div span{
+    color: var(--orange-color);
+}
+.blog-body p{
+    margin-top: 5%;
+    margin-left: 10%;
+    font-weight: 700;
+    font-size: 22px;
+    width: 80%;
+    transition: all ease 0.7s;
+}
+.blog-footer{
+    margin-top: 20px;
+    border: 1px solid rgb(231, 220, 220);
+    display: flex;
+    justify-content: space-between;
+}
+.blog-footer div{
+    margin: 5% 7%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.blog-footer div span{
+    color: var(--orange-color);
+    margin-right: 10px;
+}
+.blog-footer p{
+    transition: all ease-in 0.7s;
+    margin: 5% 7% 5% 0%;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+.blog-footer p:hover{
+    color: var(--orange-color);
+    cursor: pointer;
+}

@@ -1,0 +1,168 @@
+.footer{
+    margin-top: 50px;
+    padding-top: 50px;
+    background: var(--black-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--white-color);
+    height: 500px;
+}
+.footer-about-us{
+    width: 31%;
+    padding-left: 20px;
+}
+.footer-about-us h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.footer-about-us p{
+    line-height: 1.5;
+    margin-top: 40px;
+    letter-spacing: 2px;
+}
+
+/* .footer-company{
+    border: 1px solid white;    
+} */
+.footer-company h1{
+    font-size: 30px;
+}
+.footer-company ul{
+    padding-top: 40px;
+    list-style: none;
+    line-height: 2;
+    letter-spacing: 1.5px;
+}
+.footer-company ul li{
+    transition: 0.7s;
+}
+.footer-company ul li:hover{
+    color: var(--orange-color);
+    cursor: pointer;
+}
+
+.footer-service{
+    padding-left: 10px;
+}
+.footer-service h1{
+    font-size: 30px;
+}
+.footer-service ul{
+    padding-top: 40px;
+    list-style: none;
+    line-height: 2;
+    letter-spacing: 1.5px;
+}
+.footer-service ul li{
+    transition: 0.7s;
+}
+.footer-service ul li:hover{
+    color: var(--orange-color);
+    cursor: pointer;
+}
+
+.footer-posts{
+    padding-left: 10px;
+    width: 30%;
+}
+.footer-posts h1{
+    font-size: 30px;
+}
+.posts{
+    width: 100%;
+    height: 100px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.post{
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+}
+.post img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.post-desc{
+    transition: all ease-in 0.7s;
+}
+.post-desc h2{
+    padding-left: 20px;
+    letter-spacing: 1.5;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.post-desc p{
+    padding-left: 20px;
+}
+.post-desc:hover{
+    cursor: pointer;
+    color: var(--orange-color);
+}
+
+.footer-end{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background: #060c26;
+    color: var(--white-color);
+}
+.footer-end img{
+    padding-left: 5%;
+}
+.footer-end p{
+    margin-top: 3%;
+    font-size: 20px;
+}
+.footer-end p span{
+    color: var(--orange-color);
+}
+
+.social-link{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+}
+.facebook{
+    margin-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.facebook:hover{
+    color: #0866ff;
+}
+.instagram{
+    margin-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.instagram:hover{
+    color: #fc12a3;
+}
+.twitter{
+    margin-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.twitter:hover{
+    color: #1d9bf0;
+}
+.youtube{
+    margin-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.youtube:hover{
+    color: #ff0000;
+}
