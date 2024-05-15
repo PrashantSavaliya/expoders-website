@@ -54,6 +54,7 @@ nav ul li ul li:hover{
 .menu-icon{
     display: none;
 }
+
 /*----------Media Query----------*/
 
 @media (max-width: 1200px){

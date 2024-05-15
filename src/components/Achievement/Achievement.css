@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-between;
     background: var(--black-color);
-    border-top-left-radius: 30%;
+    /* border-top-left-radius: 30%; */
 }
 
 .left-side-achievement {
@@ -99,8 +99,4 @@
 }
 .list h1 span{
     color: var(--orange-color);
-}
-.check-mark{
-    color: var(--orange-color);
-    margin-right: 5px;
 }

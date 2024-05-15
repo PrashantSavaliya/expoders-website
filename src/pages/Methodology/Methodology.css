@@ -1,0 +1,45 @@
+.methodology{
+    margin: 30px 0px;
+}
+.methodology h1{
+    color: var(--orange-color);
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.methodology p{
+    color: rgb(137, 137, 137);
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+}
+.methodology-progress h2{
+    color: var(--orange-color);
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 40px;
+}
+.progress{
+    display: flex;
+    justify-content: space-between;
+}
+.progress img{
+    width: 100%;
+}
+.progress div ul{
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.progress div ul li{
+    list-style: none;
+}
+.progress div ul li p{
+    color: rgb(137, 137, 137);
+    margin: 20px 0px;
+    line-height: 1.5;
+}
+.progress div ul li p span{
+    color: var(--black-color);
+    font-weight: bold;
+}

@@ -17,7 +17,7 @@ const Projects = () => {
                 <div className="show">
                     <img src={project_img_1} alt="" />
                     <div className="caption">
-                    <span><CgPlayButtonO className='play-button' /></span>
+                        <span><CgPlayButtonO className='play-button' /></span>
                         <h2>Consulting</h2>
                         <p>Strategy and Planning Building data</p>
                     </div>
@@ -25,7 +25,7 @@ const Projects = () => {
                 <div className="show">
                     <img src={project_img_2} alt="" />
                     <div className="caption">
-                    <span><CgPlayButtonO className='play-button' /></span>
+                        <span><CgPlayButtonO className='play-button' /></span>
                         <h2>Consulting</h2>
                         <p>Consulting for business organitzation</p>
                     </div>

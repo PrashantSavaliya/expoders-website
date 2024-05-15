@@ -33,3 +33,20 @@
     height: 30px;
     width: 30px;
 }
+
+/*----------Media Query----------*/
+
+@media (max-width: 840px){
+    .home-text h1 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .home-text p {
+        font-size: 14px;
+        margin: 10px auto 20px;
+        line-height: 1.5;
+    }
+    .home{
+        border-bottom-right-radius: 0%;
+    }
+}

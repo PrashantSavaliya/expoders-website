@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react'
 import './Navbar.css';
 import expoders_img from '../../assets/Expoders_logo2.png';
 import { MdMenu } from "react-icons/md";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ( {dark_nav} ) => {
   const [sticky, setSticky] = useState(false)
   const [MobileMenu, setMobileMenu] = useState(false)
 
@@ -18,18 +19,19 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
+    // <nav className={`container ${sticky ? dark_nav : 'dark-nav'}`}>
+    <nav className='container dark-nav'>
       <img src={expoders_img} alt="" className='logo' />
       <ul className={MobileMenu ? '' : 'hide-mobile-icon'}>
         <li>
-          Home
+          <Link to='/'>Home</Link>
         </li>
         <li>
           Company
           <ul>
-            <li>About Expoders</li>
-            <li>About Team</li>
-            <li>Methodology</li>
+          <li><Link to ='/about-expoders'>About Expoders</Link></li>
+            <li><Link to = '/about-team'>About Team</Link></li>
+            <li><Link to = '/about-methodology'>Methodology</Link></li>
           </ul>
         </li>
         <li>

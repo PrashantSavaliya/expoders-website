@@ -58,6 +58,11 @@ a {
   font-size: 25px;
 }
 
+.check-mark{
+  color: var(--orange-color);
+  margin-right: 5px;
+}
+
 /*----------Media Query----------*/
 
 @media (max-width: 1200px){
