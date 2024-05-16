@@ -3,7 +3,6 @@ import './BackgroundPage.css';
 import { Link } from 'react-router-dom'
 
 const BackgroundPage = ({ header, page_name, imageUrl }) => {
-debugger
     const backgroundStyle = {
         backgroundImage: `linear-gradient(rgba(5, 10, 30, 0.3), rgba(5, 10, 30, 0.7)), url(${imageUrl})`,
         backgroundRepeat: 'no-repeat',

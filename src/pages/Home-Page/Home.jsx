@@ -10,6 +10,7 @@ import Footer from '../../components/Footer/Footer.jsx'
 import Strategy from '../../components/Strategy/Strategy.jsx'
 import Blog from '../../components/Blog/Blog.jsx'
 import ClientReview from '../../components/Client-Review/ClientReview.jsx'
+import CtaBox from '../../components/CTA-Box/CtaBox';
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       <Projects />
       <Consulting />
       <Strategy />
+      <CtaBox />
       <ClientReview />
       <Blog />
       <Footer />

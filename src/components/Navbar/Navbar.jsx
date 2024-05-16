@@ -27,24 +27,27 @@ const Navbar = ( {dark_nav} ) => {
           <Link to='/'>Home</Link>
         </li>
         <li>
-          Company
+          <Link to = '/company/about-expoders'>Company</Link>
           <ul>
-          <li><Link to ='/about-expoders'>About Expoders</Link></li>
-            <li><Link to = '/about-team'>About Team</Link></li>
-            <li><Link to = '/about-methodology'>Methodology</Link></li>
+          <li><Link to ='/company/about-expoders'>About Expoders</Link></li>
+            <li><Link to = '/company/about-team'>About Team</Link></li>
+            <li><Link to = '/company/about-methodology'>Methodology</Link></li>
           </ul>
         </li>
         <li>
-          Service
+          <Link to = '/services'>Service</Link>
           <ul>
-            <li>WEB DEVELOPMENT</li>
-            <li>MOBILE APP DEVELOPMENT</li>
-            <li>DESIGN AND CNS</li>
-            <li>OTHER IT SERVICES</li>
+            <li><Link to = '/services'>WEB DEVELOPMENT</Link></li>
+            <li><Link to = '/services'>MOBILE APP DEVELOPMENT</Link></li>
+            <li><Link to = '/services'>DESIGN AND CNS</Link></li>
+            <li><Link to = '/services'>OTHER IT SERVICES</Link></li>
           </ul>
         </li>
         <li>Portfolio</li>
-        <li><button className='btn'>Contact Us</button></li>
+        <li><Link to = '/hire-developer'>Hire Developers</Link></li>
+        <li><Link to = '/career'>Career</Link></li>
+        <li>Blog</li>
+        <li><button className='btn'><Link to = '/contact-us'>Contact Us</Link></button></li>
       </ul>
       <MdMenu className='menu-icon' onClick={toggleMenu}/>
     </nav>

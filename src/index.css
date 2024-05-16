@@ -63,6 +63,10 @@ a {
   margin-right: 5px;
 }
 
+.page-background-img-content{
+  margin-top: 90px;
+}
+
 /*----------Media Query----------*/
 
 @media (max-width: 1200px){

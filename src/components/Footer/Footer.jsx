@@ -1,17 +1,18 @@
 import React from 'react'
 import './Footer.css'
-import post_1 from '../../assets/post_1.jpg'
-import post_2 from '../../assets/post_2.jpg'
 import expoders_logo from '../../assets/Expoders_logo2.png';
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { IoEarthSharp, IoMailOutline } from "react-icons/io5";
+import { FaSkype, FaPhone, FaLocationDot } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <>
             <div className='footer container'>
                 <div className="footer-about-us">
-                    <h1>About Us</h1>
-                    <p>Busines Consulting is optimize standing manufactured products and installation synergy. Professionally predominat why professional business</p>
+                    <h1>EXPODERS SOLUTIONS</h1>
+                    <p>Top leading .NET and iOS/Android mobile apps development company, Our ASP.NET experts providing high-performance, custom .NET applications of any complexity with incredible competence.</p>
                     <div className="social-link">
                         <div className="facebook">
                             <FaFacebookF />
@@ -30,43 +31,38 @@ const Footer = () => {
                 <div className="footer-company">
                     <h1>Company</h1>
                     <ul>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
-                        <li>Service</li>
-                        <li>Our Team</li>
+                        <li><Link to = '/'>Home</Link></li>
+                        <li><Link to = '/company/about-expoders'>About Us</Link></li>
+                        <li><Link to = '/services'>Service</Link></li>
+                        <li><Link to = '/company/about-team'>Our Team</Link></li>
+                        <li><Link>Portfolio</Link></li>
+                        <li><Link to = '/career'>Career</Link></li>
+                        <li>Blog</li>
+                        <li><Link to = '/contact-us'>Contact Us</Link></li>
                     </ul>
                 </div>
                 <div className="footer-service">
-                    <h1>Service</h1>
+                    <h1>Quick Links</h1>
                     <ul>
-                        <li>Strategy & Planing</li>
-                        <li>Consumer Market</li>
-                        <li>Data Analysis</li>
-                        <li>Corporate Finance</li>
-                        <li>Market Research</li>
+                        <li><Link to = '/hire-developer'>Hire Dedicated developers</Link></li>
+                        <li><Link to = '/hire-developer'>Hire Asp.Net Developer</Link></li>
+                        <li><Link to = '/hire-developer'>Hire Php Developer</Link></li>
+                        <li><Link to = '/hire-developer'>Hire Android Developer</Link></li>
+                        <li><Link to = '/hire-developer'>Hire Ios Developer</Link></li>
+                        <li><Link to = '/hire-developer'>Cross Platform Development</Link></li>
+                        <li><Link to = '/hire-developer'>Hire Angular Js Developer</Link></li>
                     </ul>
                 </div>
-                <div className="footer-posts">
-                    <h1>Popular Posts</h1>
-                    <div className="posts">
-                        <div className="post">
-                            <img src={post_1} alt="" />
-                        </div>
-                        <div className="post-desc">
-                            <h2>How To Plugin Install WP server?</h2>
-                            <p>Dec 2, 2023</p>
-                        </div>
-                    </div>
-                    <div className="posts">
-                        <div className="post">
-                            <img src={post_2} alt="" />
-                        </div>
-                        <div className="post-desc">
-                            <h2>Top 10 Most Usefull Google Extansion</h2>
-                            <p>Dec 15, 2023</p>
-                        </div>
-                    </div>
+                <div className="footer-contact">
+                    <h1>Contact</h1>
+                    <ul>
+                        <li><IoEarthSharp className='contact-icons' /> India, Australia</li>
+                        <li><FaSkype className='contact-icons' /> dashu6101</li>
+                        <li><IoMailOutline className='contact-icons' /> info@expoders.com</li>
+                        <li><FaPhone className='contact-icons' /> (+91) 8460 311248</li>
+                        <li><FaLocationDot className='contact-icons' /> 503, Horizon Trade Center, Vaishnovdevi circle Besides KD hospital, Sarkhej - Gandhinagar Highway, Ahmedabad, Gujarat 382481</li>
+                        <li><FaLocationDot className='contact-icons' /> F/25, Ashapura complex, Detroj Road, Kadi 382715</li>
+                    </ul>
                 </div>
             </div>
             <div className='footer-end'>

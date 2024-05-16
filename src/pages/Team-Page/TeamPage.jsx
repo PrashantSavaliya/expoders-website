@@ -8,12 +8,13 @@ import team_img_1 from '../../assets/team_img_1.png'
 import team_img_2 from '../../assets/team_img_2.jpeg'
 import team_img_3 from '../../assets/team_img_3.png'
 import team_img_4 from '../../assets/team_img_4.jpeg'
+import CtaBox from '../../components/CTA-Box/CtaBox';
 
 const TeamPage = () => {
     return (
         <>
             <Navbar />
-            <div className="team-page-content">
+            <div className="page-background-img-content">
                 <BackgroundPage header='About Team' page_name='About Team' imageUrl={aboutTeamPageImage} />
             </div>
             <div className="container team-page">
@@ -53,6 +54,7 @@ const TeamPage = () => {
                     </div>
                 </div>
             </div>
+            <CtaBox />
             <Footer />
         </>
     )

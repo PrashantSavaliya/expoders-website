@@ -7,12 +7,13 @@ import Footer from '../../components/Footer/Footer'
 import ClientReview from '../../components/Client-Review/ClientReview';
 import BackgroundPage from '../../components/Page-start-Background/BackgroundPage';
 import aboutPageImage from '../../assets/about_page_background_img.png';
+import CtaBox from '../../components/CTA-Box/CtaBox';
 
 const About = () => {
     return (
         <div>
             <Navbar />
-            <div className='about-page'>
+            <div className='page-background-img-content'>
                 <BackgroundPage header = 'About Us' page_name = 'About Us' imageUrl={aboutPageImage} />
                 <div className="about-body">
                     <div className="container about-body-left">
@@ -45,6 +46,7 @@ const About = () => {
                 </div>
             </div>
             <Achievement />
+            <CtaBox />
             <ClientReview />
             <Footer />
         </div>

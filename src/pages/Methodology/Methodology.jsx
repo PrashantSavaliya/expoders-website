@@ -8,12 +8,13 @@ import Achievement from '../../components/Achievement/Achievement.jsx'
 import Footer from '../../components/Footer/Footer';
 import ClientReview from '../../components/Client-Review/ClientReview.jsx'
 import methodology_img from '../../assets/Methodology_img_chart.jpg'
+import CtaBox from '../../components/CTA-Box/CtaBox.jsx';
 
 const Methodology = () => {
     return (
         <>
             <Navbar />
-            <div className="team-page-content">
+            <div className="page-background-img-content">
                 <BackgroundPage header='METHODOLOGY' page_name='Methodology' imageUrl={methodologyImg} />
             </div>
             <div className="container methodology">
@@ -52,6 +53,7 @@ const Methodology = () => {
                 </div>
             </div>
             <Achievement />
+            <CtaBox />
             <ClientReview />
             <Footer />
         </>

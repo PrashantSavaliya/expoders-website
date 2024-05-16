@@ -1,0 +1,47 @@
+.contact-page {
+    margin-top: 90px;
+}
+.App {
+    height: 100vh;
+    width: 100vw;
+}
+.map-container {
+    height: 100%;
+    width: 100%;
+}
+.contact-details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.contact-details-left h2{
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--orange-color);
+    margin: 20px auto;
+}
+.contact-details-left ul{
+    list-style: none;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
+.contact-details-left ul li{
+    transition: 0.7s;
+    margin-top: 5px;
+}
+.contact-details-right{
+    margin-left: 20px;
+}
+.contact-details-right h3{
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--orange-color);
+    margin: 20px auto;
+}
+.contact-details-right p{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: rgb(137, 137, 137);
+    line-height: 1.5;
+}

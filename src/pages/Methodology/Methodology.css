@@ -24,9 +24,9 @@
     display: flex;
     justify-content: space-between;
 }
-.progress img{
+/* .progress img{
     width: 100%;
-}
+} */
 .progress div ul{
     margin-left: 20px;
     margin-top: 50px;

@@ -13,26 +13,28 @@
     padding-left: 20px;
 }
 .footer-about-us h1{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 .footer-about-us p{
     line-height: 1.5;
     margin-top: 40px;
     letter-spacing: 2px;
+    font-size: 15px;
 }
 
 /* .footer-company{
     border: 1px solid white;    
 } */
 .footer-company h1{
-    font-size: 30px;
+    font-size: 25px;
 }
 .footer-company ul{
     padding-top: 40px;
     list-style: none;
     line-height: 2;
     letter-spacing: 1.5px;
+    font-size: 15px;
 }
 .footer-company ul li{
     transition: 0.7s;
@@ -46,13 +48,14 @@
     padding-left: 10px;
 }
 .footer-service h1{
-    font-size: 30px;
+    font-size: 25px;
 }
 .footer-service ul{
     padding-top: 40px;
     list-style: none;
     line-height: 2;
     letter-spacing: 1.5px;
+    font-size: 15px;
 }
 .footer-service ul li{
     transition: 0.7s;
@@ -62,14 +65,33 @@
     cursor: pointer;
 }
 
-.footer-posts{
+.footer-contact{
     padding-left: 10px;
     width: 30%;
 }
-.footer-posts h1{
-    font-size: 30px;
+.footer-contact h1{
+    font-size: 25px;
 }
-.posts{
+.footer-contact ul{
+    padding-top: 40px;
+    list-style: none;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
+.footer-contact ul li{
+    transition: 0.7s;
+    margin-top: 5px;
+}
+.footer-contact ul li:hover{
+    color: var(--orange-color);
+    cursor: pointer;
+}
+.contact-icons{
+    font-size: 20px;
+    margin-right: 8px;
+}
+/* .posts{
     width: 100%;
     height: 100px;
     padding-top: 40px;
@@ -102,7 +124,7 @@
 .post-desc:hover{
     cursor: pointer;
     color: var(--orange-color);
-}
+} */
 
 .footer-end{
     padding-left: 10%;
