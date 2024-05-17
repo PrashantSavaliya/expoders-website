@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Services.css'
 import { CgWebsite } from "react-icons/cg";
 import { FaMobileScreenButton } from "react-icons/fa6";
@@ -10,7 +11,7 @@ const Services = () => {
         <div className='service'>
             <div className="service-details">
                 <div>We Run All Kinds Of Services From <span>Technologies</span></div>
-                <a><button className='btn'>All Service </button></a>
+                <a><Link to = '/services'><button className='btn'>All Service </button></Link></a>
             </div>
             <div className="service-items">
                 <div className="items">

@@ -8,6 +8,8 @@ import CareerPage from './pages/Career-Page/CareerPage';
 import HireDeveloperPage from './pages/Hire-Developer-Page/HireDeveloperPage';
 import ServicesPage from './pages/Services-Page/ServicesPage';
 import ContactPage from './pages/Contact-Page/ContactPage';
+import PortfolioPage from './pages/Portfolio-Page/PortfolioPage';
+import PortfolioDetailPage from './pages/Portfolio-Page/PortfolioDetailPage';
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
         <Route path='/hire-developer' element={<HireDeveloperPage />} />
         <Route path='/services' element={<ServicesPage />} />
         <Route path='/contact-us' element={<ContactPage />} />
+        <Route path='/portfolio' element={<PortfolioPage />} />
+        <Route path='/portfolio/:name' element={<PortfolioDetailPage />} />
       </Routes>
     </BrowserRouter>
   );

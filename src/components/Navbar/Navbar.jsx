@@ -43,7 +43,7 @@ const Navbar = ( {dark_nav} ) => {
             <li><Link to = '/services'>OTHER IT SERVICES</Link></li>
           </ul>
         </li>
-        <li>Portfolio</li>
+        <li><Link to = '/portfolio'>Portfolio</Link></li>
         <li><Link to = '/hire-developer'>Hire Developers</Link></li>
         <li><Link to = '/career'>Career</Link></li>
         <li>Blog</li>

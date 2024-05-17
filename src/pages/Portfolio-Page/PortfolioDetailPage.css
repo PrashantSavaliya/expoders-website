@@ -1,0 +1,39 @@
+.portfolio-details-page{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.portfolio-details-page img{
+    width: 60%;
+    height: auto;
+}
+.portfolio-detail-text{
+    margin-left: 20px;
+}
+.portfolio-detail-text h2{
+    font-weight: 500;
+    font-size: 35px;
+    color: var(--orange-color);
+    margin-bottom: 20px;
+}
+.portfolio-detail-text h3{
+    margin: 10px auto;
+    color: rgb(137, 137, 137);
+    font-size: 17px;
+    font-weight: 500;
+}
+.portfolio-detail-text h3 span{
+    color: var(--black-color);    
+    font-weight: bolder;
+}
+.portfolio-detail-text h4{
+
+    color: var(--black-color);    
+    font-weight: bolder;
+}
+.portfolio-detail-text p{
+    margin: 10px auto;
+    color: rgb(137, 137, 137);
+    font-size: 17px;
+    font-weight: 500;
+}

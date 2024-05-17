@@ -67,6 +67,36 @@ a {
   margin-top: 90px;
 }
 
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 10px 0;
+}
+.form-row input, .form-row textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+textarea {
+  height: 100px;
+}
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all ease 0.7s;
+}
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
 /*----------Media Query----------*/
 
 @media (max-width: 1200px){

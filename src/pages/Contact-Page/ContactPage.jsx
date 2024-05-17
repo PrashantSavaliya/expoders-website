@@ -44,6 +44,19 @@ const ContactPage = () => {
                     <div className="contact-details-right">
                         <h3>SEND US A MESSAGE</h3>
                         <p>Do you have small changes to make, need to troubleshoot something or have a new idea you’d like to implement? Let’s chat; text or talk, and get it done. We pride ourselves on having outstanding customer service. Just let us know what you need and Seecoding Technologies Customer Service will let you know how can make it happen.</p>
+                        <form>
+                            <div className="form-row">
+                                <input type="text" placeholder="Please enter your full name" required/>
+                                <input type="email" placeholder="Please enter your email" required />
+                            </div>
+                            <div className="form-row">
+                                <input type="text" placeholder="Please enter your subject" required />
+                            </div>
+                            <div className="form-row">
+                                <textarea placeholder="Please enter Your Message" required></textarea>
+                            </div>
+                            <button className="submit-btn" type="submit">SUBMIT</button>
+                        </form>
                     </div>
                 </div>
             </div>
