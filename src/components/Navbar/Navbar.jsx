@@ -46,7 +46,7 @@ const Navbar = ( {dark_nav} ) => {
         <li><Link to = '/portfolio'>Portfolio</Link></li>
         <li><Link to = '/hire-developer'>Hire Developers</Link></li>
         <li><Link to = '/career'>Career</Link></li>
-        <li>Blog</li>
+        <li><Link to = '/blog'>Blog</Link></li>
         <li><button className='btn'><Link to = '/contact-us'>Contact Us</Link></button></li>
       </ul>
       <MdMenu className='menu-icon' onClick={toggleMenu}/>

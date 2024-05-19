@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from './pages/Home-Page/Home';
 import About from './pages/About-Page/About';
 import TeamPage from './pages/Team-Page/TeamPage';
@@ -10,21 +10,47 @@ import ServicesPage from './pages/Services-Page/ServicesPage';
 import ContactPage from './pages/Contact-Page/ContactPage';
 import PortfolioPage from './pages/Portfolio-Page/PortfolioPage';
 import PortfolioDetailPage from './pages/Portfolio-Page/PortfolioDetailPage';
+import BlogPage from './pages/Blog-Page/BlogPage';
+import NotFoundPage from './pages/Not-Found-Page/NotFoundPage';
+import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner';
 
 const App = () => {
+
+  function ScrollToTopAndLoading() {
+    const { pathname } = useLocation();
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+      setLoading(true);
+      window.scrollTo(0, 0);
+      setTimeout(() => setLoading(false), 1000);
+
+      return () => setLoading(false);
+    }, [pathname]);
+
+    return loading ? <LoadingSpinner /> : null;
+  }
+
   return (
     <BrowserRouter>
+      <ScrollToTopAndLoading />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/company/about-expoders" element={<About />} />
-        <Route path='/company/about-team' element={<TeamPage />} />
-        <Route path='/company/about-methodology' element={<Methodology />} />
-        <Route path='/career' element={<CareerPage />} />
-        <Route path='/hire-developer' element={<HireDeveloperPage />} />
-        <Route path='/services' element={<ServicesPage />} />
-        <Route path='/contact-us' element={<ContactPage />} />
-        <Route path='/portfolio' element={<PortfolioPage />} />
-        <Route path='/portfolio/:name' element={<PortfolioDetailPage />} />
+        <Route path="company">
+          <Route path="about-expoders" element={<About />} />
+          <Route path="about-team" element={<TeamPage />} />
+          <Route path="about-methodology" element={<Methodology />} />
+        </Route>
+        <Route path="career" element={<CareerPage />} />
+        <Route path="hire-developer" element={<HireDeveloperPage />} />
+        <Route path="services" element={<ServicesPage />} />
+        <Route path="contact-us" element={<ContactPage />} />
+        <Route path="portfolio">
+          <Route index element={<PortfolioPage />} />
+          <Route path=":name" element={<PortfolioDetailPage />} />
+        </Route>
+        <Route path="blog" element={<BlogPage />} />
+        <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );

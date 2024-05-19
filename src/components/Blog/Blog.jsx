@@ -6,13 +6,14 @@ import blog_img3 from '../../assets/blog_img3.png'
 import { FaPlusCircle } from "react-icons/fa";
 import { SlCalender } from "react-icons/sl";
 import { CgProfile } from "react-icons/cg";
+import { Link } from 'react-router-dom'
 
 const Blog = () => {
     return (
         <div className='blog container'>
             <div className="blog-title">
                 <h2>We’re here to share story from Latest <span>News</span></h2>
-                <button className='btn'>View All Blog <FaPlusCircle className='plus-icon' /></button>
+                <Link to = '/blog'><button className='btn'>View All Blog <FaPlusCircle className='plus-icon' /></button></Link>
             </div>
             <div className="blogs">
                 <div className="blog-item">
