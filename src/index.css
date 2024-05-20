@@ -97,6 +97,10 @@ textarea {
   background-color: #0056b3;
 }
 
+.active {
+  color: var(--orange-color);
+}
+
 /*----------Media Query----------*/
 
 @media (max-width: 1200px){

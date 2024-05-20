@@ -170,7 +170,16 @@
 .instagram:hover{
     color: #fc12a3;
 }
-.twitter{
+.linked-in{
+    margin-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.linked-in:hover{
+    color: #0a66c2;
+}
+/* .twitter{
     margin-right: 30px;
     font-size: 25px;
     cursor: pointer;
@@ -187,4 +196,4 @@
 }
 .youtube:hover{
     color: #ff0000;
-}
+} */
