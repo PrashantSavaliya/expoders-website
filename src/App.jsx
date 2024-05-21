@@ -13,6 +13,7 @@ import PortfolioDetailPage from './pages/Portfolio-Page/PortfolioDetailPage';
 import BlogPage from './pages/Blog-Page/BlogPage';
 import NotFoundPage from './pages/Not-Found-Page/NotFoundPage';
 import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner';
+import Blog_Catagory from './pages/Blog-Page/Catagory/Blog_Catagory';
 
 const App = () => {
 
@@ -49,7 +50,10 @@ const App = () => {
           <Route index element={<PortfolioPage />} />
           <Route path=":name" element={<PortfolioDetailPage />} />
         </Route>
-        <Route path="blog" element={<BlogPage />} />
+        <Route path="blog">
+          <Route index element={<BlogPage />} />
+          <Route path=":category" element={<Blog_Catagory />} />
+        </Route>
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>

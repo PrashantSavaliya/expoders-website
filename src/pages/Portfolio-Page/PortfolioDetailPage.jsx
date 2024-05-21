@@ -23,7 +23,7 @@ const PortfolioDetailPage = () => {
             <div className="page-background-img-content">
                 <div className="container about-header" style={backgroundStyle} >
                     <h1>{project.name}</h1>
-                    <p><span><Link to='/'>Home</Link></span> / <Link to = '/portfolio'>Portfolio</Link> / {project.name}</p>
+                    <p><span><Link to='/'>Home</Link></span> / <Link to = '/portfolio'><span>Portfolio</span></Link> / {project.name}</p>
                 </div>
             </div>
             <div className="portfolio-details-page container">

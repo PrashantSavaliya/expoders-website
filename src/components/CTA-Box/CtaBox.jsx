@@ -5,7 +5,7 @@ import ctaBox_background_img from '../../assets/ctaBox_background_img.jpeg'
 
 const CtaBox = () => {
     const backgroundStyle = {
-        backgroundImage: `linear-gradient(rgba(5, 10, 30, 0.3), rgba(5, 10, 30, 0.7)), url(${ctaBox_background_img})`,
+        backgroundImage: `linear-gradient(rgba(5, 10, 30, 0.8), rgba(5, 10, 30, 0.65)), url(${ctaBox_background_img})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover'
