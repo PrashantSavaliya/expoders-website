@@ -14,7 +14,7 @@ const Blog_Catagory = () => {
 
   if (!filteredBlogs) {
     return <div>No blog data available.</div>;
-}
+  }
 
   return (
     <>

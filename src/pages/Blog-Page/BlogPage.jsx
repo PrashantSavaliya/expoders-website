@@ -83,7 +83,7 @@ const BlogPage = () => {
                     <div className="blog-main">
                         <div className="blog-main-img">
                             <img src={automation_img} alt="" />
-                        </div>
+                        </div>  
                         <div className="blog-content">
                             <h3>AUTOMATION <br />WEB DEVELOPMENT</h3>
                             <h2>The Rise of AI in Software Development: Unlocking New Possibilities and Challenges</h2>
