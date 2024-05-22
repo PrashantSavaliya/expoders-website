@@ -17,6 +17,8 @@
 }
 .blog-contant img{
     cursor: pointer;
+    height: 500px;
+    width: 900px;
 }
 .blog-contant h2{
     font-weight: 500;

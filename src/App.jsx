@@ -14,6 +14,11 @@ import BlogPage from './pages/Blog-Page/BlogPage';
 import NotFoundPage from './pages/Not-Found-Page/NotFoundPage';
 import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner';
 import Blog_Catagory from './pages/Blog-Page/Catagory/Blog_Catagory';
+import Marketing_Blog_Content from './pages/Blog-Page/Blog-Content/Marketing_Blog_Content';
+import Automation_Blog_Content from './pages/Blog-Page/Blog-Content/Automation_Blog_Content';
+import Mobile_Apps_Blog_Content from './pages/Blog-Page/Blog-Content/Mobile_Apps_Blog_Content';
+import UI_UX_Blog_Content from './pages/Blog-Page/Blog-Content/UI_UX_Blog_Content';
+import WebDevelopment_Blog_Content from './pages/Blog-Page/Blog-Content/WebDevelopment_Blog_Content';
 
 const App = () => {
 
@@ -53,6 +58,11 @@ const App = () => {
         <Route path="blog">
           <Route index element={<BlogPage />} />
           <Route path=":category" element={<Blog_Catagory />} />
+          <Route path="content/marketing" element={<Marketing_Blog_Content />} />
+          <Route path="content/automation" element={<Automation_Blog_Content />} />
+          <Route path="content/mobile-apps" element={<Mobile_Apps_Blog_Content />} />
+          <Route path="content/ui-ux" element={<UI_UX_Blog_Content />} />
+          <Route path="content/web-development" element={<WebDevelopment_Blog_Content />} />
         </Route>
         <Route path='*' element={<NotFoundPage />} />
       </Routes>

@@ -53,7 +53,7 @@ const BlogPage = () => {
             description: 'The software development industry is undergoing a major transformation, and artificial intelligence (AI) is at the forefront of this change. With the ability of Expoders Solutions.'
         }
     ];
-
+    
     const categories = [...new Set(blogs.map(blog => blog.title))];
 
     return (
