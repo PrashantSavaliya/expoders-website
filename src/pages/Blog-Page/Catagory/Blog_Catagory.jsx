@@ -1,8 +1,6 @@
 import React from 'react'
 import './Blog_Catagory.css'
-import Navbar from '../../../components/Navbar/Navbar'
 import CtaBox from '../../../components/CTA-Box/CtaBox'
-import Footer from '../../../components/Footer/Footer'
 import { Link, useLocation } from 'react-router-dom'
 
 const Blog_Catagory = () => {
@@ -16,7 +14,6 @@ const Blog_Catagory = () => {
 
   return (
     <>
-      <Navbar />
       <div className="blog-catagory-container container">
         <div><Link to='/blog'><span>Blog</span></Link> / {filteredBlogs[0].title}</div>
         <h1>{filteredBlogs[0].title}</h1>
@@ -29,7 +26,6 @@ const Blog_Catagory = () => {
         </div>
       </div>
       <CtaBox />
-      <Footer />
     </>
   )
 }

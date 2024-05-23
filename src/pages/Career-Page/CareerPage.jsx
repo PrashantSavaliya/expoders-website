@@ -1,10 +1,8 @@
 import React from 'react'
 import './CareerPage.css'
-import Navbar from '../../components/Navbar/Navbar'
 import BackgroundPage from '../../components/Page-start-Background/BackgroundPage';
 import Achievement from '../../components/Achievement/Achievement'
 import ClientReview from '../../components/Client-Review/ClientReview'
-import Footer from '../../components/Footer/Footer'
 import careerImg from '../../assets/career_img_background.jpg'
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -13,7 +11,6 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 const CareerPage = () => {
     return (
         <>
-            <Navbar />
             <div className="page-background-img-content">
                 <BackgroundPage header='CAREER' page_name='Carrer' imageUrl={careerImg} />
             </div>
@@ -62,7 +59,6 @@ const CareerPage = () => {
             </div>
             <Achievement />
             <ClientReview />
-            <Footer />
         </>
     )
 }

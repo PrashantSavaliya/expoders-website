@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import './PortfolioPage.css'
-import Navbar from '../../components/Navbar/Navbar'
-import Footer from '../../components/Footer/Footer'
 import BackgroundPage from '../../components/Page-start-Background/BackgroundPage'
 import portfolio_page_background from '../../assets/portfolio_background_img.jpg'
 import Achievement from '../../components/Achievement/Achievement'
@@ -21,7 +19,6 @@ const PortfolioPage = () => {
 
     return (
         <>
-            <Navbar />
             <div className="page-background-img-content">
                 <BackgroundPage header='PORTFOLIO' page_name='Portfolio' imageUrl={portfolio_page_background} />
             </div>
@@ -55,7 +52,6 @@ const PortfolioPage = () => {
             </div >
             <Achievement />
             <ClientReview />
-            <Footer />
         </>
     )
 }

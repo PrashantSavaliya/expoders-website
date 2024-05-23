@@ -1,9 +1,7 @@
 import React from 'react'
 import './TeamPage.css'
-import Navbar from '../../components/Navbar/Navbar'
 import BackgroundPage from '../../components/Page-start-Background/BackgroundPage';
 import aboutTeamPageImage from '../../assets/team_page_background.png';
-import Footer from '../../components/Footer/Footer';
 import team_img_1 from '../../assets/team_img_1.png'
 import team_img_2 from '../../assets/team_img_2.jpeg'
 import team_img_3 from '../../assets/team_img_3.png'
@@ -13,7 +11,6 @@ import CtaBox from '../../components/CTA-Box/CtaBox';
 const TeamPage = () => {
     return (
         <>
-            <Navbar />
             <div className="page-background-img-content">
                 <BackgroundPage header='About Team' page_name='About Team' imageUrl={aboutTeamPageImage} />
             </div>
@@ -55,7 +52,6 @@ const TeamPage = () => {
                 </div>
             </div>
             <CtaBox />
-            <Footer />
         </>
     )
 }

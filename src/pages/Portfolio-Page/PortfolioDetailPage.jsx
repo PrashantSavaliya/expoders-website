@@ -1,7 +1,5 @@
 import React from 'react'
 import './PortfolioDetailPage.css'
-import Navbar from '../../components/Navbar/Navbar'
-import Footer from '../../components/Footer/Footer'
 import CtaBox from '../../components/CTA-Box/CtaBox';
 import portfolio_page_background from '../../assets/portfolio_background_img.jpg'
 import { Link, useLocation  } from 'react-router-dom'
@@ -19,7 +17,6 @@ const PortfolioDetailPage = () => {
     };
     return (
         <>
-            <Navbar />
             <div className="page-background-img-content">
                 <div className="container about-header" style={backgroundStyle} >
                     <h1>{project.name}</h1>
@@ -41,7 +38,6 @@ const PortfolioDetailPage = () => {
                 </div>
             </div>
             <CtaBox />
-            <Footer />
         </>
     )
 }

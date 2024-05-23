@@ -19,28 +19,28 @@ const Services = () => {
                     <div className='items-logo'><CgWebsite className='text'/></div>
                     <h2>WEB DEVELOPMENT</h2>
                     <p>Dramatically cultivate from quality user centric growth strateges emerging</p>
-                    <button className='btn'>Read More</button>
+                    <Link to = '/services'><button className='btn'>Read More</button></Link>
                 </div>
                 <div className="items">
                     <span>02</span>
                     <div className='items-logo'><FaMobileScreenButton className='text' /></div>
                     <h2>MOBILE APP DEVELOPMENT</h2>
                     <p>Dramatically cultivate from quality user centric growth strateges emerging</p>
-                    <button className='btn'>Read More</button>
+                    <Link to = '/services'><button className='btn'>Read More</button></Link>
                 </div>
                 <div className="items">
                     <span>03</span>
                     <div className='items-logo'><SiMaterialdesignicons className='text' /></div>
                     <h2>DESIGN AND CMS</h2>
                     <p>Dramatically cultivate from quality user centric growth strateges emerging</p>
-                    <button className='btn'>Read More</button>
+                    <Link to = '/services'><button className='btn'>Read More</button></Link>
                 </div>
                 <div className="items">
                     <span>04</span>
                     <div className='items-logo'><MdOtherHouses className='text' /></div>
                     <h2>OTHERS IT SERVICES</h2>
                     <p>Dramatically cultivate from quality user centric growth strateges emerging</p>
-                    <button className='btn'>Read More</button>
+                    <Link to = '/services'><button className='btn'>Read More</button></Link>
                 </div>
             </div>
         </div>

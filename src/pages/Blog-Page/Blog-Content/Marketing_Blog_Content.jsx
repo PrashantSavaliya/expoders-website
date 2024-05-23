@@ -1,7 +1,5 @@
 import React from 'react'
 import './Blog_Content.css'
-import Navbar from '../../../components/Navbar/Navbar'
-import Footer from '../../../components/Footer/Footer'
 import CtaBox from '../../../components/CTA-Box/CtaBox'
 import { TiArrowBackOutline } from "react-icons/ti";
 import { useNavigate, Link, useLocation } from 'react-router-dom';
@@ -18,7 +16,6 @@ const Marketing_Blog_Content = () => {
   const checck = '>>';
   return (
     <>
-      <Navbar />
       <div className="blog-main-content container">
         <h3 onClick={handleGoBack}><TiArrowBackOutline /> Back</h3>
         <h2>Top skills and technologies to consider learning in 2023?</h2>
@@ -106,7 +103,6 @@ const Marketing_Blog_Content = () => {
         </form>
       </div>
       <CtaBox />
-      <Footer />
     </>
   )
 }

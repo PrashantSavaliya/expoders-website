@@ -1,17 +1,10 @@
 import React, { useState } from 'react';
 import './HireDeveloperPage.css'
-import Navbar from '../../components/Navbar/Navbar'
-import Footer from '../../components/Footer/Footer'
 import Achievement from '../../components/Achievement/Achievement'
 import ClientReview from '../../components/Client-Review/ClientReview'
 import BackgroundPage from '../../components/Page-start-Background/BackgroundPage';
 import hire_developer_page_background from '../../assets/hire_developer_page_background.jpeg';
 import { FaCheckCircle } from "react-icons/fa";
-// import Radio from '@mui/material/Radio';
-// import RadioGroup from '@mui/material/RadioGroup';
-// import FormControlLabel from '@mui/material/FormControlLabel';
-// import FormControl from '@mui/material/FormControl';
-// import FormLabel from '@mui/material/FormLabel';
 
 const HireDeveloperPage = () => {
     const [selectedOption, setSelectedOption] = useState('hire');
@@ -26,7 +19,6 @@ const HireDeveloperPage = () => {
 
     return (
         <>
-            <Navbar />
             <div className="page-background-img-content">
                 <BackgroundPage header='HIRE DEVELOPERS' page_name='Hire Developers' imageUrl={hire_developer_page_background} />
             </div>
@@ -95,7 +87,6 @@ const HireDeveloperPage = () => {
             </div>
             <Achievement />
             <ClientReview />
-            <Footer />
         </>
     )
 }

@@ -1,7 +1,5 @@
 import React from 'react';
 import './BlogPage.css';
-import Navbar from '../../components/Navbar/Navbar.jsx';
-import Footer from '../../components/Footer/Footer.jsx';
 import CtaBox from '../../components/CTA-Box/CtaBox.jsx';
 import automation_img from '../../assets/blog_images/automation_img.jpg';
 import { Link } from 'react-router-dom';
@@ -12,7 +10,6 @@ const BlogPage = () => {
     let filteredBlogs = null;
     return (
         <>
-            <Navbar />
             <div className="blog-page container">
                 <div className="blog-search">
                     <input type="text" placeholder='&#x1F50D; Search' />
@@ -66,7 +63,6 @@ const BlogPage = () => {
                 </div>
             </div>
             <CtaBox />
-            <Footer />
         </>
     )
 }

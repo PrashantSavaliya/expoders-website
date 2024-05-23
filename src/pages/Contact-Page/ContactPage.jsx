@@ -1,8 +1,6 @@
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 import { useMemo } from "react";
 import './ContactPage.css';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
 import { IoEarthSharp, IoMailOutline } from "react-icons/io5";
 import { FaSkype, FaPhone, FaLocationDot } from "react-icons/fa6";
 
@@ -14,7 +12,6 @@ const ContactPage = () => {
     const center = useMemo(() => ({ lat: 23.1345215, lng: 72.539111 }), []);
     return (
         <>
-            <Navbar />
             <div className="contact-page">
                 <div className="App">
                     {!isLoaded ? (
@@ -60,7 +57,6 @@ const ContactPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     );
 }

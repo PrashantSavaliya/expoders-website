@@ -2,8 +2,6 @@ import React from 'react'
 import './About.css'
 import { FaCheckCircle } from "react-icons/fa";
 import Achievement from '../../components/Achievement/Achievement'
-import Navbar from '../../components/Navbar/Navbar'
-import Footer from '../../components/Footer/Footer'
 import ClientReview from '../../components/Client-Review/ClientReview';
 import BackgroundPage from '../../components/Page-start-Background/BackgroundPage';
 import aboutPageImage from '../../assets/about_page_background_img.png';
@@ -12,7 +10,6 @@ import CtaBox from '../../components/CTA-Box/CtaBox';
 const About = () => {
     return (
         <div>
-            <Navbar />
             <div className='page-background-img-content'>
                 <BackgroundPage header = 'About Us' page_name = 'About Us' imageUrl={aboutPageImage} />
                 <div className="about-body">
@@ -48,7 +45,6 @@ const About = () => {
             <Achievement />
             <CtaBox />
             <ClientReview />
-            <Footer />
         </div>
     )
 }

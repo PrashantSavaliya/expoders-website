@@ -19,6 +19,7 @@ import Automation_Blog_Content from './pages/Blog-Page/Blog-Content/Automation_B
 import Mobile_Apps_Blog_Content from './pages/Blog-Page/Blog-Content/Mobile_Apps_Blog_Content';
 import UI_UX_Blog_Content from './pages/Blog-Page/Blog-Content/UI_UX_Blog_Content';
 import WebDevelopment_Blog_Content from './pages/Blog-Page/Blog-Content/WebDevelopment_Blog_Content';
+import Root from './Root';
 
 const App = () => {
 
@@ -41,30 +42,32 @@ const App = () => {
     <BrowserRouter>
       <ScrollToTopAndLoading />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="company">
-          <Route path="about-expoders" element={<About />} />
-          <Route path="about-team" element={<TeamPage />} />
-          <Route path="about-methodology" element={<Methodology />} />
+        <Route path='/' element={<Root />}>
+          <Route path="/" element={<Home />} />
+          <Route path="company">
+            <Route path="about-expoders" element={<About />} />
+            <Route path="about-team" element={<TeamPage />} />
+            <Route path="about-methodology" element={<Methodology />} />
+          </Route>
+          <Route path="career" element={<CareerPage />} />
+          <Route path="hire-developer" element={<HireDeveloperPage />} />
+          <Route path="services" element={<ServicesPage />} />
+          <Route path="contact-us" element={<ContactPage />} />
+          <Route path="portfolio">
+            <Route index element={<PortfolioPage />} />
+            <Route path=":name" element={<PortfolioDetailPage />} />
+          </Route>
+          <Route path="blog">
+            <Route index element={<BlogPage />} />
+            <Route path=":category" element={<Blog_Catagory />} />
+            <Route path="content/marketing" element={<Marketing_Blog_Content />} />
+            <Route path="content/automation" element={<Automation_Blog_Content />} />
+            <Route path="content/mobile-apps" element={<Mobile_Apps_Blog_Content />} />
+            <Route path="content/ui-ux" element={<UI_UX_Blog_Content />} />
+            <Route path="content/web-development" element={<WebDevelopment_Blog_Content />} />
+          </Route>
+          <Route path='*' element={<NotFoundPage />} />
         </Route>
-        <Route path="career" element={<CareerPage />} />
-        <Route path="hire-developer" element={<HireDeveloperPage />} />
-        <Route path="services" element={<ServicesPage />} />
-        <Route path="contact-us" element={<ContactPage />} />
-        <Route path="portfolio">
-          <Route index element={<PortfolioPage />} />
-          <Route path=":name" element={<PortfolioDetailPage />} />
-        </Route>
-        <Route path="blog">
-          <Route index element={<BlogPage />} />
-          <Route path=":category" element={<Blog_Catagory />} />
-          <Route path="content/marketing" element={<Marketing_Blog_Content />} />
-          <Route path="content/automation" element={<Automation_Blog_Content />} />
-          <Route path="content/mobile-apps" element={<Mobile_Apps_Blog_Content />} />
-          <Route path="content/ui-ux" element={<UI_UX_Blog_Content />} />
-          <Route path="content/web-development" element={<WebDevelopment_Blog_Content />} />
-        </Route>
-        <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );

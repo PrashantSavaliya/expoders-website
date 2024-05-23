@@ -1,7 +1,5 @@
 import React from 'react'
 import './ServicesPage.css'
-import Navbar from '../../components/Navbar/Navbar'
-import Footer from '../../components/Footer/Footer';
 import CtaBox from '../../components/CTA-Box/CtaBox';
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaDesktop } from "react-icons/fa";
@@ -13,7 +11,6 @@ import { SlEmotsmile } from "react-icons/sl";
 const ServicesPage = () => {
     return (
         <>
-            <Navbar />
             <div className="srevice-page-background">
                 <h1>The best <span>Solution</span> <br />for Your business</h1>
                 <p>Leading Offshore Web and Mobile Development Solutions Provider!</p>
@@ -133,7 +130,6 @@ const ServicesPage = () => {
                 </div>
             </div>
             <CtaBox />
-            <Footer />
         </>
     )
 }

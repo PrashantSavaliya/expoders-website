@@ -1,11 +1,9 @@
 import React from 'react'
 import './Methodology.css'
 import { FaCheckCircle } from "react-icons/fa";
-import Navbar from '../../components/Navbar/Navbar'
 import BackgroundPage from '../../components/Page-start-Background/BackgroundPage';
 import methodologyImg from '../../assets/methodology_img_background.jpg'
 import Achievement from '../../components/Achievement/Achievement.jsx'
-import Footer from '../../components/Footer/Footer';
 import ClientReview from '../../components/Client-Review/ClientReview.jsx'
 import methodology_img from '../../assets/Methodology_img_chart.jpg'
 import CtaBox from '../../components/CTA-Box/CtaBox.jsx';
@@ -13,7 +11,6 @@ import CtaBox from '../../components/CTA-Box/CtaBox.jsx';
 const Methodology = () => {
     return (
         <>
-            <Navbar />
             <div className="page-background-img-content">
                 <BackgroundPage header='METHODOLOGY' page_name='Methodology' imageUrl={methodologyImg} />
             </div>
@@ -55,7 +52,6 @@ const Methodology = () => {
             <Achievement />
             <CtaBox />
             <ClientReview />
-            <Footer />
         </>
     )
 }
