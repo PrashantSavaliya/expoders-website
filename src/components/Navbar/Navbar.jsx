@@ -28,7 +28,7 @@ const Navbar = ({ dark_nav }) => {
   return (
     // <nav className={`container ${sticky ? dark_nav : 'dark-nav'}`}>
     <nav className='container dark-nav'>
-      <img src={expoders_img} alt="" className='logo' />
+      <Link to = '/'><img src={expoders_img} alt="" className='logo' /></Link>
       <ul className={MobileMenu ? '' : 'hide-mobile-icon'}>
         <li className={isActive('/')}>
           <Link to='/'>Home</Link>

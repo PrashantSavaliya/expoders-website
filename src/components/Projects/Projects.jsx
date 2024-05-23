@@ -5,13 +5,14 @@ import { CgPlayButtonO } from "react-icons/cg";
 import project_img_1 from '../../assets/project_img_1.jpg'
 import project_img_2 from '../../assets/project_img_2.jpg'
 import project_img_3 from '../../assets/project_img_3.jpg'
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     return (
         <div className='project container'>
             <div className="project-title">
                 <h2>We Serve the Best Works View <span>Case Studies</span></h2>
-                <button className='btn'>All Projects <FaPlusCircle className='plus-icon' /></button>
+                <Link to = '/portfolio'><button className='btn'>All Projects <FaPlusCircle className='plus-icon' /></button></Link>
             </div>
             <div className="project-shows">
                 <div className="show">

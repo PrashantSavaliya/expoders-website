@@ -43,7 +43,7 @@
 }
 .blog-header img {
     width: 100%;
-    height: auto;
+    height: 250px;
     transition: transform 1.2s;
 }
 .blog-header button {
