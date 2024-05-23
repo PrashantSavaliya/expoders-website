@@ -49,9 +49,10 @@ const BlogPage = () => {
                     </div>
                     <div className="blog-suggestions">
                         {blog_details.map(details => {
+                            console.log('this is filteredBlogs : ', details);
                             return (
                                 <div className="blog-suggestion-box" key={details.id}>
-                                    <Link to='/blog/content/mobile-apps' state={{ details }}>
+                                    <Link to={`/blog/content/${details.route_url}`} state={{ details }}>
                                         <img src={details.imgName} alt="" />
                                         <div>
                                             <p>{details.title}</p>
