@@ -46,10 +46,10 @@ const BlogPage = () => {
                     </div>
                     <div className="blog-suggestions">
                         {blog_details.map(details => {
-                            console.log('this is filteredBlogs : ', details);
+                            const filteredBlogs = blogs.filter(blog => blog.title.toLowerCase() === details.title.toLowerCase());
                             return (
                                 <div className="blog-suggestion-box" key={details.id}>
-                                    <Link to={`/blog/content/${details.route_url}`} state={{ details }}>
+                                    <Link to={`/blog/content/${details.route_url}`} state={{ filteredBlogs }}>
                                         <img src={details.imgName} alt="" />
                                         <div>
                                             <p>{details.title}</p>
@@ -58,6 +58,7 @@ const BlogPage = () => {
                                     </Link>
                                 </div>
                             )
+                            // ))
                         })}
                     </div>
                 </div>

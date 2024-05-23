@@ -47,11 +47,11 @@ const blogs = [
     }
 ];
 const blog_details = [
-    { id: 1,route_url: 'mobile-apps', imgName: angular_img, title: 'Mobile Apps', description: 'Angular & Blazor' },
-    { id: 2,route_url: 'marketing', imgName: top_skills_img, title: 'Marketing', description: 'Top skills and technologies to consider learning in 2023?' },
-    { id: 3,route_url: 'ui-ux', imgName: ui_ux_img, title: 'UI / UX', description: 'Success factors of Saas solutions' },
-    { id: 4,route_url: 'automation', imgName: e_learning_img, title: 'Automation', description: 'How to start your own e-learning platform?' },
-    { id: 5,route_url: 'web-development', imgName: automation_img, title: 'Automation Web-Development', description: 'The Rise of AI in Software Development: Unlocking New Possibilities and Challenges' },
+    { id: 1, route_url: 'mobile-apps', imgName: angular_img, title: 'Mobile Apps', description: 'Angular & Blazor' },
+    { id: 2, route_url: 'marketing', imgName: top_skills_img, title: 'Marketing', description: 'Top skills and technologies to consider learning in 2023?' },
+    { id: 3, route_url: 'ui-ux', imgName: ui_ux_img, title: 'UI/UX', description: 'Success factors of Saas solutions' },
+    { id: 4, route_url: 'automation', imgName: e_learning_img, title: 'Automation', description: 'How to start your own e-learning platform?' },
+    { id: 5, route_url: 'web-development', imgName: automation_img, title: 'Web Development', description: 'The Rise of AI in Software Development: Unlocking New Possibilities and Challenges' },
 ];
 
 export { blogs, blog_details };

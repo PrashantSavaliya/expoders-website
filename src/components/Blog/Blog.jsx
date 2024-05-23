@@ -61,18 +61,18 @@ const Blog = () => {
                 </div>
             </div> */}
             <div className="blogs">
-                {blogs.slice(0, 3).map(blog => {
+                {blogs.slice(0, 3).map(filteredBlogs => {
                     return (
-                        // <Link to = {`/blog/${blog.route_url}`} state={{ blog }}>
+                        // <Link to = {`/blog/content/${filteredBlogs.route_url}`} state={{ filteredBlogs }}>
                         <Link to = '/blog'>
                             <div className="blog-item">
                                 <div className="blog-header">
-                                    <img src={blog.img_name} alt="" />
+                                    <img src={filteredBlogs.img_name} alt="" />
                                     <button className='btn'>DESIGN</button>
                                 </div>
                                 <div className="blog-body">
                                     <div><span><SlCalender /></span> August 25, 2023</div>
-                                    <p>{blog.title}</p>
+                                    <p>{filteredBlogs.title}</p>
                                 </div>
                                 <div className="blog-footer">
                                     <div><span><CgProfile /></span> Alex Collins</div>
