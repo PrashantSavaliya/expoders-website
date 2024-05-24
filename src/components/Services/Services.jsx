@@ -1,50 +1,66 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import './Services.css'
-import { CgWebsite } from "react-icons/cg";
-import { FaMobileScreenButton } from "react-icons/fa6";
-import { SiMaterialdesignicons } from "react-icons/si";
-import { MdOtherHouses } from "react-icons/md";
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Services.css";
+import { FaDesktop, FaCheckCircle } from "react-icons/fa";
+import { MdOutlinePhoneAndroid } from "react-icons/md";
+import { IoSettingsOutline } from "react-icons/io5";
+import { LuTarget } from "react-icons/lu";
 
 const Services = () => {
     return (
-        <div className='service'>
-            <div className="service-details">
-                <div>We Run All Kinds Of Services From <span>Technologies</span></div>
-                <a><Link to = '/services'><button className='btn'>All Service </button></Link></a>
+        <div className="service">
+            <h2>Services</h2>
+            <div>
+                <p> Leading Offshore Web and Mobile Development Solutions Provider! Enhance Your Efficiency<br />  and Augment Your Work Force by Hiring the Expert dedicated developer </p>
+                <button className="btn"> <Link to="/services">All Services</Link> </button>
             </div>
-            <div className="service-items">
-                <div className="items">
-                    <span>01</span>
-                    <div className='items-logo'><CgWebsite className='text'/></div>
-                    <h2>WEB DEVELOPMENT</h2>
-                    <p>Dramatically cultivate from quality user centric growth strateges emerging</p>
-                    <Link to = '/services'><button className='btn'>Read More</button></Link>
+            <section>
+                <div>
+                    <div className="service-item">
+                        <ul>
+                            <h4> <FaDesktop className="serviceIcon" /> <span> Web Development</span> </h4>
+                            <li> <FaCheckCircle className="check-mark" /> Asp .Net Development </li>
+                            <li> <FaCheckCircle className="check-mark" /> Php Development </li>
+                            <li> <FaCheckCircle className="check-mark" /> Mean Stack Development </li>
+                            <li> <FaCheckCircle className="check-mark" /> Angular Js Development </li>
+                            <li> <FaCheckCircle className="check-mark" /> React native for Web Development </li>
+                            <li> <FaCheckCircle className="check-mark" /> E-Commerce Web  Development </li>
+                        </ul>
+                    </div>
+                    <div className="service-item">
+                        <ul>
+                            <h4> <MdOutlinePhoneAndroid className="serviceIcon" /> <span> Mobile App Development</span> </h4>
+                            <li> <FaCheckCircle className="check-mark" /> iPhone Application Development </li>
+                            <li> <FaCheckCircle className="check-mark" /> Android Application Development </li>
+                            <li> <FaCheckCircle className="check-mark" /> React Native App Development </li>
+                            <li> <FaCheckCircle className="check-mark" /> Flutter App Development </li>
+                            <li> <FaCheckCircle className="check-mark" /> Cross Platform App Development </li>
+                        </ul>
+                    </div>
                 </div>
-                <div className="items">
-                    <span>02</span>
-                    <div className='items-logo'><FaMobileScreenButton className='text' /></div>
-                    <h2>MOBILE APP DEVELOPMENT</h2>
-                    <p>Dramatically cultivate from quality user centric growth strateges emerging</p>
-                    <Link to = '/services'><button className='btn'>Read More</button></Link>
+                <div>
+                    <div className="service-item">
+                        <ul>
+                            <h4> <LuTarget className="serviceIcon" /> <span>DESIGN & CMS</span> </h4>
+                            <li> <FaCheckCircle className="check-mark" /> Web Design </li>
+                            <li> <FaCheckCircle className="check-mark" /> Mobile App Design </li>
+                            <li> <FaCheckCircle className="check-mark" /> HTML5 Development </li>
+                            <li> <FaCheckCircle className="check-mark" /> Content Management Systems </li>
+                        </ul>
+                    </div>
+                    <div className="service-item">
+                        <ul>
+                            <h4> <IoSettingsOutline className="serviceIcon" /> <span> OTHERS IT Service</span> </h4>
+                            <li> <FaCheckCircle className="check-mark" /> Digital marketing & SEO </li>
+                            <li> <FaCheckCircle className="check-mark" /> Database Server Migration </li>
+                            <li> <FaCheckCircle className="check-mark" /> Technology Migration </li>
+                            <li> <FaCheckCircle className="check-mark" /> Web Hosting & maintenance </li>
+                        </ul>
+                    </div>
                 </div>
-                <div className="items">
-                    <span>03</span>
-                    <div className='items-logo'><SiMaterialdesignicons className='text' /></div>
-                    <h2>DESIGN AND CMS</h2>
-                    <p>Dramatically cultivate from quality user centric growth strateges emerging</p>
-                    <Link to = '/services'><button className='btn'>Read More</button></Link>
-                </div>
-                <div className="items">
-                    <span>04</span>
-                    <div className='items-logo'><MdOtherHouses className='text' /></div>
-                    <h2>OTHERS IT SERVICES</h2>
-                    <p>Dramatically cultivate from quality user centric growth strateges emerging</p>
-                    <Link to = '/services'><button className='btn'>Read More</button></Link>
-                </div>
-            </div>
+            </section>
         </div>
-    )
-}
+    );
+};
 
-export default Services
+export default Services;

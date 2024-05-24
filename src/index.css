@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
   --orange-color: #f84813;
+  /* --orange-color: #f813f4; */
   --white-color: #fceded;
   --black-color: #050a1e;
 }

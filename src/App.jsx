@@ -30,7 +30,7 @@ const App = () => {
     useEffect(() => {
       setLoading(true);
       window.scrollTo(0, 0);
-      setTimeout(() => setLoading(false), 1000);
+      setTimeout(() => setLoading(false), 800);
 
       return () => setLoading(false);
     }, [pathname]);
