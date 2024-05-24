@@ -32,6 +32,7 @@ const projects =
             catagory: 'Web Application Development',
             domain: 'Health Care',
             details_techbology: 'ASP.NET | .NET Core | WEB API | SQL Server',
+            website_link: 'http://teleafyabeta.azurewebsites.net/',
             description: 'TeleAfya is platform enables health care provider to register and highlights their knowledge and experience in patients where patient can book their appointments, diagnosis test and ambulance as well and track record of their health profile.'
         },
         {
@@ -43,6 +44,7 @@ const projects =
             catagory: 'Web Application Development',
             domain: 'Social Network',
             details_techbology: ' ASP.NET MVC | WEB API | SQL Server',
+             website_link: 'https://www.chitchatchannel.com/',
             description: 'ChitChatChannem is social network platform where presenter can create their channel and post daily updates where participant can join and view those channels and get daily updates.'
         },
         {
@@ -54,6 +56,7 @@ const projects =
             catagory: ' Web Application Development',
             domain: 'Health Care',
             details_techbology: 'ASP.NET Core MVC | API | SQL Server',
+             website_link: 'https://dispatchafya.azurewebsites.net/',
             description: 'DispatchAfya is platform to create and health care events in town and patients can book and join those events and request profesional volunteers.'
         },
         {
@@ -65,6 +68,7 @@ const projects =
             catagory: 'Web Application Development',
             domain: 'Business and Security',
             details_techbology: 'ASP.NET | SQL Server | Android',
+             website_link: 'http://secure-z.com/',
             description: 'Secure-z is online platform for business houses to manage their products sell or buy and maintain balance sheet at one place.'
         },
         {
@@ -76,6 +80,7 @@ const projects =
             catagory: 'Web Application Development',
             domain: 'Industry',
             details_techbology: 'PHP | WordPress | MySQL',
+             website_link: 'https://aquasain.com/',
             description: 'The water softener Aquasain is an effective system that eliminates the formation of lime without the need for salt.'
         },
         {
@@ -87,6 +92,7 @@ const projects =
             catagory: 'Web Application Development',
             domain: 'Social Network',
             details_techbology: 'PHP | Laravel | MySQL',
+             website_link: 'https://streamrights.media/aie/en/',
             description: 'StreamRights is platform for celebrities to build their profile and manage all their social networks and fan at one place.'
         },
         {
@@ -98,6 +104,7 @@ const projects =
             catagory: 'Digital Transformation',
             domain: '--*--',
             details_techbology: 'HTML5 | CSS3 | Bootstrap | jQuery',
+             website_link: 'https://smartnation.azurewebsites.net/',
             description: '--*--'
         },
         {
@@ -109,6 +116,7 @@ const projects =
             catagory: 'DESIGN & CMS',
             domain: 'Hotels and Restaurants',
             details_techbology: 'HTML5 | CSS3 | Bootstrap | jQuery',
+             website_link: 'https://www.restaurantepapanegra.com/en',
             description: '--*--'
         },
         {
@@ -120,6 +128,7 @@ const projects =
             catagory: 'DESIGN & CMS',
             domain: 'Hotels and Restaurants',
             details_techbology: 'HTML5 | CSS3 | Bootstrap | jQuery',
+             website_link: 'https://ianninigelati.com/',
             description: '--*--'
         },
         {
@@ -131,6 +140,7 @@ const projects =
             catagory: 'DESIGN & CMS',
             domain: 'Hotels and Restaurants',
             details_techbology: 'HTML5 | CSS3 | Bootstrap | jQuery',
+             website_link: 'https://restaurantecataria.com/',
             description: '--*--'
         },
         {
@@ -142,6 +152,7 @@ const projects =
             catagory: 'DESIGN & CMS',
             domain: 'Restaurant and Food',
             details_techbology: 'PHP | HTML5 | CSS3 | Bootstrap | jQuery',
+             website_link: 'http://patelseeds.com/',
             description: '--*--'
         },
         {
@@ -153,6 +164,7 @@ const projects =
             catagory: 'DESIGN & CMS',
             domain: 'Restaurant and Food',
             details_techbology: 'PHP | HTML5 | CSS3 | Bootstrap | jQuery',
+             website_link: 'https://gecko.es/',
             description: '--*--'
         },
         {
@@ -164,6 +176,7 @@ const projects =
             catagory: 'DESIGN & CMS',
             domain: 'Video Streaming',
             details_techbology: 'Angular | HTML5 | CSS3 | Bootstrap | jQuery',
+             website_link: 'https://twatwa.com/lander',
             description: 'TwaTwa is an online video streaming platform and an outlet of user generated video content that allows undiscovered Talent creators and video content creators to upload and share videos'
         },
         {
@@ -175,6 +188,7 @@ const projects =
             catagory: 'Ecommerce',
             domain: 'Ecommerce',
             details_techbology: 'Angular | HTML5 | CSS3 | Bootstrap | jQuery | Node.js',
+             website_link: 'https://dev.progrecity.com/',
             description: ''
         },
         {
@@ -186,6 +200,7 @@ const projects =
             catagory: 'Ecommerce',
             domain: 'Ecommerce',
             details_techbology: 'Angular | HTML5 | CSS3 | Bootstrap | jQuery',
+             website_link: 'https://shippingtogo.com/',
             description: 'ShippingToGo makes shipping easy and affordable. When you ship with us, you’ll be able to choose from any of the service options our many partner carriers offer.'
         },
         {
@@ -197,6 +212,7 @@ const projects =
             catagory: 'Task Management System',
             domain: 'Task Management System',
             details_techbology: 'Angular | HTML5 | CSS3 | Bootstrap | jQuery',
+             website_link: 'https://telescopetask.com/',
             description: 'Telescope is a simple task management software for small businesses and freelancers.'
         },
         {
@@ -208,6 +224,7 @@ const projects =
             catagory: 'Video Streaming',
             domain: 'Video Streaming',
             details_techbology: 'React | HTML5 | CSS3 | Bootstrap | jQuery',
+             website_link: 'https://gotstagedweb.azurewebsites.net/',
             description: 'Gotstaged is an online video streaming platform and an outlet of user generated video content that allows undiscovered Talent creators and video content creators to upload and share videos.'
         },
         {
@@ -219,6 +236,7 @@ const projects =
             catagory: 'School Management System',
             domain: 'School Management System',
             details_techbology: 'ASP.NET MVC | SQL Server',
+             website_link: 'https://app.signmee.com/Account/Login?ReturnUrl=%2f',
             description: 'Signmee helps schools and businesses to make the move to digital forms. Signmee makes it easy to create, send, receive and store forms, attachments and payments'
         },
         {
@@ -230,6 +248,7 @@ const projects =
             catagory: 'Healthcare',
             domain: 'Healthcare',
             details_techbology: 'HTML5 | CSS3 | Bootstrap | jQuery',
+             website_link: 'https://covidsuspect.com/',
             description: '--*--'
         },
         {
@@ -241,6 +260,7 @@ const projects =
             catagory: 'Healthcare',
             domain: 'Healthcare',
             details_techbology: 'ASP.NET | .NET Core',
+             website_link: 'https://heliumcloud.net/',
             description: 'HeliumCloud continues to innovate and pioneer new software platforms that power everyday life, making the world we live in a little better each day.'
         },
         {
@@ -252,6 +272,7 @@ const projects =
             catagory: 'Healthcare',
             domain: 'Healthcare',
             details_techbology: 'HTML5 | CSS3 | Bootstrap | jQuery',
+             website_link: 'https://jewelstrong.azurewebsites.net/',
             description: '--*--'
         },
         {
@@ -263,6 +284,7 @@ const projects =
             catagory: 'Healthcare',
             domain: 'Healthcare',
             details_techbology: 'Flutter| Node.js | Angular',
+             website_link: 'https://play.google.com/store/apps/details?id=com.blog.healthwebguru',
             description: 'The Health Web Guru app is here. Sometimes you need to make an effort to make positive changes in your life and lead a healthy lifestyle.'
         }
     ];

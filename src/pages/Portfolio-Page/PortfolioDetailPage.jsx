@@ -33,7 +33,7 @@ const PortfolioDetailPage = () => {
                     <p>{project.details_techbology}</p>
                     <h4>DESCRIPTION : </h4>
                     <p>{project.description}</p>
-                    <button className='btn'>Visit Website</button>
+                    <a className='btn' href={project.website_link} target='_blank'>Visit Website</a>
                 </div>
             </div>
             <CtaBox />
