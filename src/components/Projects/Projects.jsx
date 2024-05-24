@@ -6,15 +6,30 @@ import project_img_1 from '../../assets/project_img_1.jpg'
 import project_img_2 from '../../assets/project_img_2.jpg'
 import project_img_3 from '../../assets/project_img_3.jpg'
 import { Link } from 'react-router-dom';
+import projects from '../../data/PortfolioData.js';
 
 const Projects = () => {
     return (
         <div className='project container'>
             <div className="project-title">
                 <h2>We Serve the Best Works View <span>Case Studies</span></h2>
-                <Link to = '/portfolio'><button className='btn'>All Projects <FaPlusCircle className='plus-icon' /></button></Link>
+                <Link to='/portfolio'><button className='btn'>All Projects <FaPlusCircle className='plus-icon' /></button></Link>
             </div>
             <div className="project-shows">
+                {projects.slice(0, 3).map(project => (
+                    <div className="show">
+                        <Link to={`/portfolio/${project.name}`} state={{project}}>
+                            <img src={project.imageUrl} alt="" />
+                            <div className="caption">
+                                <span><CgPlayButtonO className='play-button' /></span>
+                                <h2>{project.name}</h2>
+                                <p>{project.technology}</p>
+                            </div>
+                        </Link>
+                    </div>
+                ))}
+            </div>
+            {/* <div className="project-shows">
                 <div className="show">
                     <img src={project_img_1} alt="" />
                     <div className="caption">
@@ -39,7 +54,7 @@ const Projects = () => {
                         <p>Strategy and Planning Building data</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

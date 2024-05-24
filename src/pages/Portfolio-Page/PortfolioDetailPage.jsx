@@ -5,7 +5,6 @@ import portfolio_page_background from '../../assets/portfolio_background_img.jpg
 import { Link, useLocation  } from 'react-router-dom'
 
 const PortfolioDetailPage = () => {
-    debugger
     const location = useLocation();
     const {project} = location.state || {};
 
