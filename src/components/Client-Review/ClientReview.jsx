@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import './ClientReview.css'
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
@@ -10,20 +10,24 @@ import client_img_5 from '../../assets/client_img_5.jpg';
 
 const ClientReview = () => {
 
-  const slider = useRef()
-  let tx = 0;
+  const slider = useRef();
+  const [tx, setTx] = useState(0);
+
+  // let tx = 0;
   const slideForward = () => {
-    if (tx > -50) {
-      tx -= 20;
+    if (tx > -60) {
+      const newTx = tx - 20;
+      setTx(newTx);
+      slider.current.style.transform = `translateX(${newTx}%)`;
     }
-    slider.current.style.transform = `translateX(${tx}%)`;
   }
 
   const slideBackward = () => {
     if (tx < 0) {
-      tx += 20;
+      const newTx = tx + 20;
+      setTx(newTx);
+      slider.current.style.transform = `translateX(${newTx}%)`;
     }
-    slider.current.style.transform = `translateX(${tx}%)`;
   }
 
   return (
@@ -32,8 +36,8 @@ const ClientReview = () => {
       <h1>CLIENTS EVALUATE</h1>
       <p>We are proud of this number but we still level and level up to the high peak, hope to have all your backup along. Below is some feedbacks from our customers</p>
       <div className='review-items'>
-        <FaArrowLeft className='left-btn' onClick={slideBackward} />
-        <FaArrowRight className='right-btn' onClick={slideForward} />
+        <FaArrowLeft className={`left-btn ${tx === 0 ? 'disabled' : ''}`} onClick={slideBackward} />
+        <FaArrowRight className={`right-btn ${tx <= -60 ? 'disabled' : ''}`}  onClick={slideForward} />
         <div className="slider">
           <ul ref={slider}>
             <li>

@@ -11,11 +11,11 @@
     transition: background-color 0.7s ease;
     padding: 8px;
     z-index: 1000;
-    /* border: 2px solid var(--black-color); */
+    border: 1px solid var(--black-color);
 }
 
 .scroll-to-top-button:hover {
-    border: 2px solid var(--orange-color);
+    border: 1px solid var(--orange-color);
     background-color: var(--white-color);
     color: var(--black-color);
 }

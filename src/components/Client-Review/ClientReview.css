@@ -1,30 +1,36 @@
-.client-review{
+.client-review {
     margin-top: 50px;
     /* height: 500px; */
 }
-.client-review .trustworthy{
+
+.client-review .trustworthy {
     text-align: center;
     letter-spacing: 7px;
     font-size: 20px;
 }
-.client-review h1{
+
+.client-review h1 {
     font-size: 40px;
     color: var(--orange-color);
     text-align: center;
     margin: 20px 0px;
 }
-.client-review p{
+
+.client-review p {
     font-size: 18px;
     color: rgb(137, 136, 136);
     text-align: center;
     margin: 10px;
 }
-.review-items{
+
+.review-items {
     margin: 80px auto;
     padding: 0px 80px;
     position: relative;
 }
-.left-btn, .right-btn{
+
+.left-btn,
+.right-btn {
     position: absolute;
     top: 50%;
     padding: 5px;
@@ -37,49 +43,66 @@
     cursor: pointer;
     transition: all ease 0.7s;
 }
-.left-btn:hover, .right-btn:hover{
+
+.left-btn:hover,
+.right-btn:hover {
     background: var(--orange-color);
     color: var(--black-color);
 }
-.right-btn{
+
+.right-btn {
     left: auto;
     right: 0;
     /* margin-right: 100px; */
 }
-.left-btn{
+
+.left-btn {
     margin-left: -30px;
 }
-.slider{
+
+.left-btn.disabled,
+.right-btn.disabled {
+    background: none;
+    color: rgb(137, 137, 137);
+    cursor: not-allowed;
+}
+
+.slider {
     overflow: hidden;
 }
-.slider ul{
+
+.slider ul {
     display: flex;
     width: 250%;
     overflow-x: hidden;
     transition: all ease 0.7s;
     /* transform: translateX(-80%); */
 }
-.slider ul li{  
+
+.slider ul li {
     list-style: none;
     width: 50%;
     padding: 20px;
 }
-.slide{
+
+.slide {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 10px;
     color: var(--black-color);
-    line-height: 1.4;   
+    line-height: 1.4;
     height: 250px;
 }
-.slide img{
+
+.slide img {
     height: 65px;
     width: 65px;
     border-radius: 50%;
     border: 2px solid var(--orange-color);
     margin-right: 20px;
 }
-.user-info{
+
+.user-info {
     display: flex;
     align-items: center;
     margin-left: 15px;
