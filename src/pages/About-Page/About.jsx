@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import './About.css'
 import { FaCheckCircle } from "react-icons/fa";
 import Achievement from '../../components/Achievement/Achievement'
@@ -8,10 +8,21 @@ import aboutPageImage from '../../assets/about_page_background_img.png';
 import CtaBox from '../../components/CTA-Box/CtaBox';
 
 const About = () => {
+
+    const achievementRef = useRef(null);
+
+    const scrollToAchievment = () => {
+        const offset = -400
+        if (achievementRef.current) {
+          const topPos = achievementRef.current.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top: topPos, behavior: 'smooth', });
+          console.log(window.scrollY);
+        }
+      };
     return (
         <div>
             <div className='page-background-img-content'>
-                <BackgroundPage header = 'About Us' page_name = 'About Us' imageUrl={aboutPageImage} />
+                <BackgroundPage header='About Us' page_name='About Us' imageUrl={aboutPageImage} />
                 <div className="about-body">
                     <div className="container about-body-left">
                         <h1>Why Expoders Solutions?</h1>
@@ -42,7 +53,9 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <Achievement />
+            <div ref={achievementRef}>
+                <Achievement scrollToAchievment={scrollToAchievment} />
+            </div>
             <CtaBox />
             <ClientReview />
         </div>

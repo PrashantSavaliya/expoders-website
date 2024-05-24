@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import './CareerPage.css'
 import BackgroundPage from '../../components/Page-start-Background/BackgroundPage';
 import Achievement from '../../components/Achievement/Achievement'
@@ -9,6 +9,16 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 
 const CareerPage = () => {
+    const achievementRef = useRef(null);
+
+    const scrollToAchievment = () => {
+        const offset = -400
+        if (achievementRef.current) {
+            const topPos = achievementRef.current.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top: topPos, behavior: 'smooth', });
+            console.log(window.scrollY);
+        }
+    };
     return (
         <>
             <div className="page-background-img-content">
@@ -57,7 +67,9 @@ const CareerPage = () => {
                     </AccordionDetails>
                 </Accordion>
             </div>
-            <Achievement />
+            <div ref={achievementRef}>
+                <Achievement scrollToAchievment={scrollToAchievment} />
+            </div>
             <ClientReview />
         </>
     )

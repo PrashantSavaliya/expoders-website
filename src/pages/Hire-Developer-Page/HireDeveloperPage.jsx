@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useRef } from 'react';
 import './HireDeveloperPage.css'
 import Achievement from '../../components/Achievement/Achievement'
 import ClientReview from '../../components/Client-Review/ClientReview'
@@ -9,12 +9,22 @@ import { FaCheckCircle } from "react-icons/fa";
 const HireDeveloperPage = () => {
     const [selectedOption, setSelectedOption] = useState('hire');
     const [contact, setContact] = useState('');
+    const achievementRef = useRef(null);
+
+    const scrollToAchievment = () => {
+        const offset = -400
+        if (achievementRef.current) {
+            const topPos = achievementRef.current.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top: topPos, behavior: 'smooth', });
+            console.log(window.scrollY);
+        }
+    };
 
     const handleContactChange = (e) => {
-      const value = e.target.value;
-      if (/^\d{0,10}$/.test(value)) {
-        setContact(value);
-      }
+        const value = e.target.value;
+        if (/^\d{0,10}$/.test(value)) {
+            setContact(value);
+        }
     };
 
     return (
@@ -36,7 +46,7 @@ const HireDeveloperPage = () => {
                         <li><FaCheckCircle className='check-mark' /> 100% confidentiality assurance</li>
                     </ul>
                 </div>
-                    {/* <h2>GET A QUICK QUOTE</h2>
+                {/* <h2>GET A QUICK QUOTE</h2>
                     <div>
                         <FormControl>
                             <RadioGroup row className='question' >
@@ -45,47 +55,49 @@ const HireDeveloperPage = () => {
                             </RadioGroup>
                         </FormControl>
                     </div> */}
-                    <div className="quick-quote-form hire-developer-right">
-                        <h2>GET A QUICK QUOTE</h2>
-                        <div className="option-toggle">
-                            <label>
-                                <input type="radio" name="option" value="hire" checked={selectedOption === 'hire'} onChange={() => setSelectedOption('hire')} />
-                                Hire Developer
-                            </label>
-                            <label>
-                                <input type="radio" name="option" value="quote" checked={selectedOption === 'quote'} onChange={() => setSelectedOption('quote')} />
-                                Request Quote
-                            </label>
-                        </div>
-                        {selectedOption === 'hire' && (
-                            <div className="checkboxes">
-                                <label><input type="checkbox" /> Asp.Net Developer</label>
-                                <label><input type="checkbox" /> Php Developer</label>
-                                <label><input type="checkbox" /> Android Developer</label>
-                                <label><input type="checkbox" /> Ios Developer</label>
-                                <label><input type="checkbox" /> Cross Platform Developer</label>
-                                <label><input type="checkbox" /> Angular Developer</label>
-                            </div>
-                        )}
-                        <form>
-                            <div className="form-row">
-                                <input type="text" placeholder="Please enter your full name" required/>
-                                <input type="email" placeholder="Please enter your email" required />
-                            </div>
-                            <div className="form-row">
-                            <input type="text" placeholder="Please enter your contact" value={contact} onChange={handleContactChange} required />                                <input type="text" placeholder="Please enter your country" required />
-                            </div>
-                            <div className="form-row">
-                                <input type="text" placeholder="Please enter your company name" required />
-                            </div>
-                            <div className="form-row">
-                                <textarea placeholder="Please enter Your Message" required></textarea>
-                            </div>
-                            <button className='submit-btn' type="submit">SUBMIT</button>
-                        </form>
+                <div className="quick-quote-form hire-developer-right">
+                    <h2>GET A QUICK QUOTE</h2>
+                    <div className="option-toggle">
+                        <label>
+                            <input type="radio" name="option" value="hire" checked={selectedOption === 'hire'} onChange={() => setSelectedOption('hire')} />
+                            Hire Developer
+                        </label>
+                        <label>
+                            <input type="radio" name="option" value="quote" checked={selectedOption === 'quote'} onChange={() => setSelectedOption('quote')} />
+                            Request Quote
+                        </label>
                     </div>
+                    {selectedOption === 'hire' && (
+                        <div className="checkboxes">
+                            <label><input type="checkbox" /> Asp.Net Developer</label>
+                            <label><input type="checkbox" /> Php Developer</label>
+                            <label><input type="checkbox" /> Android Developer</label>
+                            <label><input type="checkbox" /> Ios Developer</label>
+                            <label><input type="checkbox" /> Cross Platform Developer</label>
+                            <label><input type="checkbox" /> Angular Developer</label>
+                        </div>
+                    )}
+                    <form>
+                        <div className="form-row">
+                            <input type="text" placeholder="Please enter your full name" required />
+                            <input type="email" placeholder="Please enter your email" required />
+                        </div>
+                        <div className="form-row">
+                            <input type="text" placeholder="Please enter your contact" value={contact} onChange={handleContactChange} required />                                <input type="text" placeholder="Please enter your country" required />
+                        </div>
+                        <div className="form-row">
+                            <input type="text" placeholder="Please enter your company name" required />
+                        </div>
+                        <div className="form-row">
+                            <textarea placeholder="Please enter Your Message" required></textarea>
+                        </div>
+                        <button className='submit-btn' type="submit">SUBMIT</button>
+                    </form>
+                </div>
             </div>
-            <Achievement />
+            <div ref={achievementRef}>
+                <Achievement scrollToAchievment={scrollToAchievment} />
+            </div>
             <ClientReview />
         </>
     )

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import './Methodology.css'
 import { FaCheckCircle } from "react-icons/fa";
 import BackgroundPage from '../../components/Page-start-Background/BackgroundPage';
@@ -9,6 +9,17 @@ import methodology_img from '../../assets/Methodology_img_chart.jpg'
 import CtaBox from '../../components/CTA-Box/CtaBox.jsx';
 
 const Methodology = () => {
+
+    const achievementRef = useRef(null);
+
+    const scrollToAchievment = () => {
+        const offset = -400
+        if (achievementRef.current) {
+            const topPos = achievementRef.current.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top: topPos, behavior: 'smooth', });
+            console.log(window.scrollY);
+        }
+    };
     return (
         <>
             <div className="page-background-img-content">
@@ -49,7 +60,9 @@ const Methodology = () => {
                     </div>
                 </div>
             </div>
-            <Achievement />
+            <div ref={achievementRef}>
+                <Achievement scrollToAchievment={scrollToAchievment} />
+            </div>
             <CtaBox />
             <ClientReview />
         </>

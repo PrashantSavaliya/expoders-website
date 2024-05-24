@@ -4,7 +4,7 @@ import emp_img_1 from '../../assets/employee_img.png';
 import { FaPlusCircle , FaCheckCircle } from "react-icons/fa";
 import { useSpring, animated } from 'react-spring';
 
-const Achievement = () => {
+const Achievement = ({ scrollToAchievment }) => {
     const [isVisible, setIsVisible] = useState(false);
 
     const projectCompletedProps = useSpring({
@@ -59,7 +59,7 @@ const Achievement = () => {
                             <li><FaCheckCircle className='check-mark' /> Distinctively evisculate data superior content.</li>
                             <li><FaCheckCircle className='check-mark' /> Monotonectally foster open source</li>
                         </ul>
-                        <button className='btn'>Learn More <FaPlusCircle className='plus-icon' /></button>
+                        <button className='btn' onClick={scrollToAchievment}>Learn More <FaPlusCircle className='plus-icon' /></button>
                     </div>
                 </div>
             </div>

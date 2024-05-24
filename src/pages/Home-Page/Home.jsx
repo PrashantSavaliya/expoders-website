@@ -13,6 +13,7 @@ import CtaBox from '../../components/CTA-Box/CtaBox';
 const Home = () => {
   const servicesRef = useRef(null);
   const clientRef = useRef(null);
+  const achievementRef = useRef(null);
 
   const scrollToServices = () => {
     const offset = 125;
@@ -28,6 +29,14 @@ const Home = () => {
       window.scrollTo({ top: topPos, behavior: 'smooth', });
     }
   };
+  const scrollToAchievment = () => {
+    const offset = -400
+    if (achievementRef.current) {
+      const topPos = achievementRef.current.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: topPos, behavior: 'smooth', });
+      console.log(window.scrollY);
+    }
+  };
 
   return (
     <>
@@ -37,7 +46,9 @@ const Home = () => {
           <Services />
         </div>
       </div>
-      <Achievement />
+      <div ref={achievementRef}>
+        <Achievement scrollToAchievment={scrollToAchievment} />
+      </div>
       <About scrollToClient={scrollToClient} />
       <Projects />
       <Consulting />
