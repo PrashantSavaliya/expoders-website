@@ -1,8 +1,8 @@
 .project{
     background: var(--black-color);
     /* height: 500px; */
-    border-top-left-radius: 30%;
-    border-bottom-right-radius: 30%;
+    /* border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%; */
     padding-top: 20px;
     padding-bottom: 20px;
     color: var(--white-color);

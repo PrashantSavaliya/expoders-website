@@ -9,7 +9,7 @@
     align-items: center;
     display: flex;
     position: relative; 
-    border-bottom-right-radius: 30%;
+    /* border-bottom-right-radius: 30%; */
 }
 
 .home-text {
