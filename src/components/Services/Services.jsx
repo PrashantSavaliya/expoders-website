@@ -11,8 +11,8 @@ const Services = () => {
         <div className="service">
             <h2>Services</h2>
             <div>
-                <p> Leading Offshore Web and Mobile Development Solutions Provider! Enhance Your Efficiency<br />  and Augment Your Work Force by Hiring the Expert dedicated developer </p>
-                <button className="btn"> <Link to="/services">All Services</Link> </button>
+                <p> Leading Offshore Web and Mobile Development Solutions Provider! Enhance Your Efficiency  and Augment Your Work Force by Hiring the Expert dedicated developer </p>
+                <Link to="/services"><button className="btn"> All Services </button></Link>
             </div>
             <section>
                 <div>

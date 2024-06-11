@@ -51,7 +51,7 @@ const Achievement = ({ scrollToAchievment }) => {
                     <div className='right-top'>
                         <h2>The Fastest Way To Achieve Your Business <span>Success</span></h2>
                         <p>Continually generate 2.0 communities and client-focused products. In synergize strategic manufactured products whereas levera.</p>
-                    </div>
+                    </div>  
                     <div className="right-bottom">
                         <div>We are Since <span>2007 to Present</span> in Sandigo, USA</div>
                         <ul>

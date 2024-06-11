@@ -8,7 +8,7 @@ const ContactPage = () => {
     const { isLoaded } = useLoadScript({
         // googleMapsApiKey: process.env.AIzaSyBIVVZ9Kuz0GaVRw_0LkkUPKyavU4OhobM
         googleMapsApiKey: ''
-    });
+    }); 
     const center = useMemo(() => ({ lat: 23.1345215, lng: 72.539111 }), []);
     return (
         <>

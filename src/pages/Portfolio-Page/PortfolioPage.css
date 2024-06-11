@@ -1,4 +1,4 @@
-.portfolio-page ul {
+/* .portfolio-page ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,46 +20,6 @@
     font-size: 20px;
     color: var(--orange-color);
 }
-
-/* .portfolio-items{
-    display: flex;
-    justify-content: space-between;
-}
-.portfolio-item{
-    margin: 20px 0;
-    height: 250px;
-    width: 32%;
-    border: 1px solid black;
-    background-color: rgb(232, 232, 232);
-    position: relative;
-}
-.portfolio-item img{
-    height: 100%;
-    width: 100%;
-}
-.portfolio-item div{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(32, 25, 158, 0.7);
-    opacity: 0;
-    transition: 0.7s;
-    padding-top: 50%;
-    padding-left: 5%;
-    color: var(--white-color);
-}
-.portfolio-item div h3{
-    letter-spacing: 1.3px;
-}
-.portfolio-item div p{
-    font-size: 12px;
-}
-.portfolio-item:hover div{
-    opacity: 1;
-    padding-top: 45%;
-} */
 
 
 .portfolio-grid {
@@ -100,6 +60,83 @@
 .portfolio-image:hover .portfolio-overlay {
     opacity: 1;
 }
+.portfolio-text {
+    color: white;
+    width: 100%;
+    padding-top: 40%;
+    padding-left: 5%;
+} */
+
+
+.portfolio-page ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.portfolio-page ul li {
+    list-style: none;
+    margin: 15px 15px;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease 0.7s;
+}
+
+.portfolio-page ul li:hover {
+    color: var(--orange-color);
+}
+
+.portfolio-page ul span {
+    font-size: 20px;
+    color: var(--orange-color);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust based on available width */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.portfolio-item {
+    position: relative;
+    border: 1px solid black;
+}
+
+.portfolio-image {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: auto; /* Auto adjust height to maintain aspect ratio */
+    transition: transform 0.7s ease;
+}
+
+.portfolio-image:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.7s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.portfolio-image:hover .portfolio-overlay {
+    opacity: 1;
+}
+
 .portfolio-text {
     color: white;
     width: 100%;

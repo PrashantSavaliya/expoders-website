@@ -9,7 +9,7 @@
 .blog-title h2{
     font-weight: 800;
     font-size: 35px;
-    width: 40%;
+    width: 70%;
 }
 .blog-title h2 span{
     color: var(--orange-color);
@@ -98,4 +98,92 @@
 .blog-footer p:hover{
     color: var(--orange-color);
     cursor: pointer;
+}
+
+/*----------Media Query----------*/
+
+@media (max-width: 1000px){
+    .blog-title h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .blog-header img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 780px){
+    .blog-title{
+        flex-direction: column;
+    }
+    .blog-title h2{
+        flex-basis: 100%;
+        text-align: center;
+        width: 100%;
+        padding: auto 15%;
+    }
+    .blog-title a{
+        flex-basis: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .blogs{
+        flex-direction: column;
+    }
+    .blog-item{
+        flex-basis: 100%;
+    }
+    .blog-header img {
+        height: 450px;
+    }
+    .blog-body div{
+        margin-top: 5%;
+        margin-left: 5%
+    }
+    .blog-body p{
+        margin-top: -3%;
+        margin-left: 70%;
+        font-weight: 700;
+        font-size: 22px;
+        width: 30%;
+    }
+    .blog-footer{
+        margin-top: 10px;
+    }
+    .blog-footer div{
+        margin: 5% 7%;
+        font-size: 20px;
+    }
+}
+@media (max-width: 520px){
+    .blog-body p{
+        margin-left: 60%;
+        font-size: 20px;
+        width: 30%;
+    }
+    .blog-header img {
+        height: 320px;
+    }
+}
+@media (max-width: 380px){
+    .blog-header img {
+        height: 270px;
+    }
+    .blog-body p{
+        margin-top: -4%;
+        margin-left: 65%;
+        width: 30%;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .blog-footer div{
+        margin: 5% 5%;
+        font-size: 18px;
+    }
+    .blog-footer p{
+        margin: 5% 5% 5% 0%;
+        font-size: 18px;
+    }
 }

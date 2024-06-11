@@ -14,3 +14,52 @@
 .free-quote{
     margin-right: 10px;
 }
+
+/*----------Media Query----------*/
+
+@media (max-width: 1024px){
+      .ctaBox{
+        padding: 50px 60px;
+      }
+      .ctaBox h1{
+        font-size: 30px;
+    }
+    .free-quote{
+        margin-right: 8px;
+    }
+}
+@media (max-width: 940px){
+    .ctaBox{
+        flex-direction: column;
+        height: 200px;
+    }
+    .ctaBox h1{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .ctaBox div{
+        flex-basis: 100%;
+        order: 2;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width: 440px){
+    .ctaBox{
+        height: 250px;
+    }
+    .ctaBox div{
+        flex-direction: column;
+        text-align: start;
+        margin-left: 5%;
+    }
+    .free-quote{
+        flex-basis: 100%;
+        margin: 10px auto;
+    }
+    .ctaBox h1{
+        font-size: 25px;
+    }
+}

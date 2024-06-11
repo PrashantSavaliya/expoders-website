@@ -109,3 +109,38 @@
     margin-bottom: 20px;
     font-size: 15px;
 }
+
+/*----------Media Query----------*/
+
+@media (max-width: 640px){
+    .client-review h1{
+        font-size: 35px;
+    }
+    .review-items{
+        padding: 0px 40px;
+    }
+    .right-btn, .left-btn{
+        padding: 2px;
+        height: 35px;
+        width: 35px;
+    }
+    .slider ul li{
+        padding: 12px;
+    }
+    .slide {
+        padding: 10px;
+    }
+    .slide img{
+        width: 50px;
+        height: 50px;
+    }
+    .slider ul li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 360px){
+    .client-review h1{
+        font-size: 30px;
+    }
+}

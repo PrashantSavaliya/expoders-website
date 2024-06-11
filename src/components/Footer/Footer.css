@@ -1,4 +1,4 @@
-.footer{
+/* .footer{
     margin-top: 50px;
     padding-top: 50px;
     background: var(--black-color);
@@ -22,10 +22,6 @@
     letter-spacing: 2px;
     font-size: 15px;
 }
-
-/* .footer-company{
-    border: 1px solid white;    
-} */
 .footer-company h1{
     font-size: 25px;
 }
@@ -91,40 +87,6 @@
     font-size: 20px;
     margin-right: 8px;
 }
-/* .posts{
-    width: 100%;
-    height: 100px;
-    padding-top: 40px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
-}
-.post{
-    width: 150px;
-    height: 100px;
-    border-radius: 10px;
-}
-.post img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-.post-desc{
-    transition: all ease-in 0.7s;
-}
-.post-desc h2{
-    padding-left: 20px;
-    letter-spacing: 1.5;
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-.post-desc p{
-    padding-left: 20px;
-}
-.post-desc:hover{
-    cursor: pointer;
-    color: var(--orange-color);
-} */
 
 .footer-end{
     padding-left: 10%;
@@ -178,22 +140,121 @@
 }
 .linked-in:hover{
     color: #0a66c2;
-}
-/* .twitter{
-    margin-right: 30px;
-    font-size: 25px;
-    cursor: pointer;
-    transition: 0.7s;
-}
-.twitter:hover{
-    color: #1d9bf0;
-}
-.youtube{
-    margin-right: 30px;
-    font-size: 25px;
-    cursor: pointer;
-    transition: 0.7s;
-}
-.youtube:hover{
-    color: #ff0000;
 } */
+
+.footer {
+    margin-top: 50px;
+    padding-top: 50px;
+    background: var(--black-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--white-color);
+    height: auto;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-about-us, .footer-company, .footer-service, .footer-contact {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.footer-about-us h1, .footer-company h1, .footer-service h1, .footer-contact h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.footer-about-us p, .footer-company ul, .footer-service ul, .footer-contact ul {
+    line-height: 1.5;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.footer-company ul, .footer-service ul, .footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-company ul li, .footer-service ul li, .footer-contact ul li {
+    transition: 0.7s;
+    margin-top: 10px;
+}
+
+.footer-company ul li:hover, .footer-service ul li:hover, .footer-contact ul li:hover {
+    color: var(--orange-color);
+    cursor: pointer;
+}
+
+.contact-icons {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.footer-end {
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    background: #060c26;
+    color: var(--white-color);
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-end img {
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+.footer-end p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.footer-end p span {
+    color: var(--orange-color);
+}
+
+.social-link {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.facebook, .instagram, .linked-in {
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.facebook:hover {
+    color: #0866ff;
+}
+
+.instagram:hover {
+    color: #fc12a3;
+}
+
+.linked-in:hover {
+    color: #0a66c2;
+}
+
+/*----------Media Query----------*/
+
+@media (min-width: 600px) {
+    .footer-about-us, .footer-company, .footer-service, .footer-contact {
+        width: 48%;
+    }
+}
+
+@media (min-width: 900px) {
+    .footer-about-us, .footer-company, .footer-service, .footer-contact {
+        width: 23%;
+    }
+    .footer {
+        flex-wrap: nowrap;
+    }
+}

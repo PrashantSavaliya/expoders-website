@@ -37,7 +37,7 @@ const ClientReview = () => {
       <p>We are proud of this number but we still level and level up to the high peak, hope to have all your backup along. Below is some feedbacks from our customers</p>
       <div className='review-items'>
         <FaArrowLeft className={`left-btn ${tx === 0 ? 'disabled' : ''}`} onClick={slideBackward} />
-        <FaArrowRight className={`right-btn ${tx <= -60 ? 'disabled' : ''}`}  onClick={slideForward} />
+        <FaArrowRight className={`right-btn ${tx <= -60 ? 'disabled' : ''}`} onClick={slideForward} />
         <div className="slider">
           <ul ref={slider}>
             <li>

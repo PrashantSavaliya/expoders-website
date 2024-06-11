@@ -67,3 +67,102 @@
 .consulting-right button{
     margin-top: 25px;
 }
+
+/*----------Media Query----------*/
+
+@media (max-width: 1000px){
+    .boxes{
+        height: 230px;
+        width: 230px;
+    }
+    .consulting-right{
+        margin-left: 40px;
+    }
+    .consulting-right{
+        margin-top: 25px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .consulting-right h2{
+        margin-top: 20px;
+        font-weight: 600;
+    }
+    .consulting-right p{
+        margin-top: 20px;
+        line-height: 1.2;
+    }
+}
+@media (max-width: 840px){
+    .consulting{
+        flex-direction: column;
+    }
+    .consulting-left{
+        flex-basis: 100%;
+
+    }
+    .consulting-right{
+        flex-basis: 100%;
+    }
+    .main-box{
+        margin: 0% 18%;
+    }
+    .consulting-right{
+        width: 90%;
+    }
+}
+@media (max-width: 640px){
+    .main-box{
+        margin: 0% 5%;
+    }
+    .boxes{
+        height: 210px;
+        width: 210px;
+    }
+    .consulting-right{
+        width: 80%;
+    }
+}
+@media (max-width: 480px){
+    .boxes{
+        height: 180px;
+        width: 180px;
+    }
+    .boxes h2{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    .number{
+        font-size: 35px;
+    }
+    .boxes p{
+        line-height: 1.2;
+        font-size: 15px;
+    }
+    .consulting-right h1{
+        margin-top: 25px;
+        font-weight: 600;
+    }
+    .consulting-right h2{
+        margin-top: 10px;
+    }
+    .consulting-right p{
+        margin-top: 10px;
+    }
+    .consulting-right button{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 410px){
+    .boxes{
+        height: 150px;
+        width: 150px;
+    }
+    .number{
+        font-size: 25px;
+    }
+    .consulting-right h1{
+        font-size: 25px;    
+    }
+
+}

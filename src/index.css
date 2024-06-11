@@ -113,3 +113,22 @@ textarea {
     padding: 14px 22px;
   }
 }
+
+@media (max-width: 840px){
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 520px){
+  .btn{
+    padding: 12px 19px;
+  }
+}
+
+@media (max-width: 420px){
+  .btn{
+    padding: 10px 17px;
+  }
+}

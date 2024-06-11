@@ -46,15 +46,6 @@ const HireDeveloperPage = () => {
                         <li><FaCheckCircle className='check-mark' /> 100% confidentiality assurance</li>
                     </ul>
                 </div>
-                {/* <h2>GET A QUICK QUOTE</h2>
-                    <div>
-                        <FormControl>
-                            <RadioGroup row className='question' >
-                                <FormControlLabel value="hire" control={<Radio />} label="Hire Developer" className='hire' />
-                                <FormControlLabel value="quote" control={<Radio />} label="Request Quote" className='quote' />
-                            </RadioGroup>
-                        </FormControl>
-                    </div> */}
                 <div className="quick-quote-form hire-developer-right">
                     <h2>GET A QUICK QUOTE</h2>
                     <div className="option-toggle">

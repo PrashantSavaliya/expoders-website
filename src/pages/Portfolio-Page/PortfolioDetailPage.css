@@ -1,4 +1,4 @@
-.portfolio-details-page{
+/* .portfolio-details-page{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -36,4 +36,31 @@
     color: rgb(137, 137, 137);
     font-size: 17px;
     font-weight: 500;
+} */
+
+
+.portfolio-details-page {
+    flex-direction: column; 
+    margin-top: 50px;
+}
+
+.portfolio-details-page img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 20px; 
+}
+
+.portfolio-detail-text {
+    margin-left: 0; 
+}
+
+.portfolio-detail-text h2 {
+    font-size: 30px; 
+    margin-bottom: 10px;
+}
+
+.portfolio-detail-text h3,
+.portfolio-detail-text h4,
+.portfolio-detail-text p {
+    font-size: 16px; 
 }

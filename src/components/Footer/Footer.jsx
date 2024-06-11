@@ -27,12 +27,6 @@ const Footer = () => {
                         <div className="linked-in">
                             <a href="https://www.linkedin.com/company/expoders-solutions/mycompany/" target='_blank'><FaLinkedinIn /></a>
                         </div>
-                        {/* <div className="twitter">
-                            <FaTwitter />
-                        </div>
-                        <div className="youtube">
-                            <FaYoutube />
-                        </div> */}
                     </div>
                 </div>
                 <div className="footer-company">

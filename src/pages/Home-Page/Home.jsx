@@ -39,7 +39,7 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div className='home-pages'>
       <Homebar scrollToServices={scrollToServices} />
       <div className="container">
         <div ref={servicesRef}>
@@ -58,7 +58,7 @@ const Home = () => {
         <ClientReview />
       </div>
       <Blog />
-    </>
+    </div>
   )
 }
 

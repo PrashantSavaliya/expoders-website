@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    position: relative; 
+    position: relative;
     /* border-bottom-right-radius: 30%; */
 }
 
@@ -23,7 +23,8 @@
     font-weight: 600;
     letter-spacing: 1.5px;
 }
-.home-text h1 span{
+
+.home-text h1 span {
     letter-spacing: 1px;
     color: var(--orange-color);
 }
@@ -34,14 +35,14 @@
     line-height: 1.5;
 }
 
-.right-arrow{
+.right-arrow {
     height: 30px;
     width: 30px;
 }
 
 /*----------Media Query----------*/
 
-@media (max-width: 840px){
+@media (max-width: 840px) {
     .home-text h1 {
         font-size: 50px;
         font-weight: 600;
@@ -51,7 +52,18 @@
         margin: 10px auto 20px;
         line-height: 1.5;
     }
-    .home{
+    .home {
         border-bottom-right-radius: 0%;
+    }
+}
+@media (max-width: 500px) {
+    .home-text h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .home-text p {
+        font-size: 10px;
+        margin: 8px auto 14px;
+        line-height: 1.3;
     }
 }
