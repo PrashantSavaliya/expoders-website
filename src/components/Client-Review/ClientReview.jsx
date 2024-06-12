@@ -73,7 +73,7 @@ const ClientReview = () => {
                     <span>Spain</span>
                   </div>
                 </div>
-                <p>They are super fast to respond to our request and questions. Very communicative through the whole process. They asked our opinion and how they could improve the site further. Mobile site looks great! Looking forward to working with them for optimization and other issues on the site.</p>
+                <p>They are super fast to respond to our request and questions. Very communicative through the whole process. They asked our opinion and how they could improve the site further. </p>
               </div>
             </li>
             <li>

@@ -169,7 +169,7 @@
 }
 @media (max-width: 380px){
     .blog-header img {
-        height: 270px;
+        height: 240px;
     }
     .blog-body p{
         margin-top: -4%;
