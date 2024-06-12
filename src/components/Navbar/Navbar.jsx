@@ -75,8 +75,8 @@ import { Link, useLocation } from "react-router-dom";
 const Navbar = ({ dark_nav }) => {
   const [sticky, setSticky] = useState(false)
   const [MobileMenu, setMobileMenu] = useState(false)
-  const [companySubmenuOpen, setCompanySubmenuOpen] = useState(true); 
-  const [serviceSubmenuOpen, setserviceSubmenuOpen] = useState(true); 
+  const [companySubmenuOpen, setCompanySubmenuOpen] = useState(false); 
+  const [serviceSubmenuOpen, setserviceSubmenuOpen] = useState(false); 
   const location = useLocation();
 
   useEffect(() => {
