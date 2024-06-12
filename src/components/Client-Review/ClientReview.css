@@ -104,6 +104,8 @@
     font-size: 15px;
 }
 
+/*----------Media Query----------*/
+
 @media (max-width: 1200px){
     .slider ul {
         width: 495%;

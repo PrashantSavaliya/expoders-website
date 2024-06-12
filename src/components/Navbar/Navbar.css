@@ -50,6 +50,8 @@ nav ul li ul li:hover {
     display: none;
 }
 
+/*----------Media Query----------*/
+
 @media (max-width: 1200px) {
     .logo {
         width: 95px;
