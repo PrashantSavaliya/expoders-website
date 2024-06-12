@@ -81,12 +81,12 @@ nav ul li ul li:hover {
         display: block;
         margin: 25px 25px;
     }
-    /* nav ul li ul {
+    nav ul li ul {
         position: static;
         background-color: transparent;
         border-radius: 1%;
-    } */
-    .show{
+    }
+    /* .show{
         background-color: transparent;
         border-radius: 2%;
         height:fit-content;
@@ -94,10 +94,10 @@ nav ul li ul li:hover {
     }
     .show li{
         margin: 5px;
-    }
-    nav ul li ul.show {
+    } */
+    /* nav ul li ul.show {
         display: block;
-    }
+    } */
     /* nav ul li ul li {
         margin: 0;
     } */

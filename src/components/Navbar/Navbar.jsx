@@ -115,16 +115,20 @@ const Navbar = ({ dark_nav }) => {
           <Link to='/'>Home</Link>
         </li>
         <li className={isActive('/company')}>
-          <span onClick={toggleCompanySubmenu}>Company <FaCaretDown /></span>
-          <ul className={companySubmenuOpen ? 'show' : ''}>
+          <span>Company <FaCaretDown /></span>
+          {/* <span onClick={toggleCompanySubmenu}>Company <FaCaretDown /></span> */}
+          {/* <ul className={companySubmenuOpen ? 'show' : ''}> */}
+          <ul>
             <li className={isActive('/company/about-expoders')} onClick={closeMenu}><Link to='/company/about-expoders'>About Expoders</Link></li>
             <li className={isActive('/company/about-team')} onClick={closeMenu}><Link to='/company/about-team'>About Team</Link></li>
             <li className={isActive('/company/about-methodology')} onClick={closeMenu}><Link to='/company/about-methodology'>Methodology</Link></li>
           </ul>
         </li>
         <li className={isActive('/services')}>
-          <span onClick={toggleServiceSubmenu}>Services <FaCaretDown /></span>
-          <ul className={serviceSubmenuOpen ? 'show' : ''}>
+          <span>Services <FaCaretDown /></span>
+          {/* <span onClick={toggleServiceSubmenu}>Services <FaCaretDown /></span> */}
+          {/* <ul className={serviceSubmenuOpen ? 'show' : ''}> */}
+          <ul>
             <li onClick={closeMenu}><Link to='/services'>WEB DEVELOPMENT</Link></li>
             <li onClick={closeMenu}><Link to='/services'>MOBILE APP DEVELOPMENT</Link></li>
             <li onClick={closeMenu}><Link to='/services'>DESIGN AND CNS</Link></li>
