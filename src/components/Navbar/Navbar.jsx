@@ -65,7 +65,7 @@
 // 
 // export default Navbar
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import expoders_img from '../../assets/Expoders_logo2.png';
 import { MdMenu } from "react-icons/md";
@@ -96,11 +96,11 @@ const Navbar = ({ dark_nav }) => {
   }
 
   const toggleCompanySubmenu = () => {
-    setCompanySubmenuOpen(!companySubmenuOpen); 
+    setCompanySubmenuOpen(prevState => !prevState); 
   }
 
   const toggleServiceSubmenu = () => {
-    setserviceSubmenuOpen(!serviceSubmenuOpen); 
+    setserviceSubmenuOpen(prevState => !prevState); 
   }
 
   const isActive = (path) => {
@@ -123,8 +123,8 @@ const Navbar = ({ dark_nav }) => {
           </ul>
         </li>
         <li className={isActive('/services')}>
-        <span onClick={toggleServiceSubmenu}>Services <FaCaretDown /></span>
-        <ul className={serviceSubmenuOpen ? 'show' : ''}>
+          <span onClick={toggleServiceSubmenu}>Services <FaCaretDown /></span>
+          <ul className={serviceSubmenuOpen ? 'show' : ''}>
             <li onClick={closeMenu}><Link to='/services'>WEB DEVELOPMENT</Link></li>
             <li onClick={closeMenu}><Link to='/services'>MOBILE APP DEVELOPMENT</Link></li>
             <li onClick={closeMenu}><Link to='/services'>DESIGN AND CNS</Link></li>

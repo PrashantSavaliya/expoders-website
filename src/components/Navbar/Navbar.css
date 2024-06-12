@@ -10,11 +10,9 @@ nav {
     justify-content: space-between;
     z-index: 10;
 }
-
 .logo {
     width: 100px;
 }
-
 nav ul li {
     display: inline-block;
     list-style: none;
@@ -22,7 +20,6 @@ nav ul li {
     position: relative;
     transition: all ease-in-out 0.2s;
 }
-
 nav ul li ul {
     margin: 0;
     padding: 0;
@@ -35,25 +32,20 @@ nav ul li ul {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
 nav ul li:hover ul {
     display: block;
 }
-
 nav ul li:hover {
     color: var(--orange-color);
     cursor: pointer;
 }
-
 nav ul li ul li:hover {
     color: var(--black-color);
 }
-
 .dark-nav {
     background: var(--black-color);
     transform: 0.5s;
 }
-
 .menu-icon {
     display: none;
 }
@@ -89,12 +81,13 @@ nav ul li ul li:hover {
         display: block;
         margin: 25px 25px;
     }
-    nav ul li ul {
+    /* nav ul li ul {
         position: static;
         background-color: transparent;
         border-radius: 1%;
-    }
+    } */
     .show{
+        background-color: transparent;
         border-radius: 2%;
         height:fit-content;
         margin: 10px;
@@ -105,15 +98,15 @@ nav ul li ul li:hover {
     nav ul li ul.show {
         display: block;
     }
-    nav ul li ul li {
+    /* nav ul li ul li {
         margin: 0;
-    }
-    nav ul li ul li:hover {
+    } */
+    /* nav ul li ul li:hover {
         color: inherit;
-    }
-    nav ul li:hover ul {
+    } */
+    /* nav ul li:hover ul {
         display: none;
-    }
+    } */
     .menu-icon {
         display: block;
         width: 40px;
