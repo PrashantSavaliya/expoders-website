@@ -41,7 +41,7 @@
 
 .portfolio-details-page {
     flex-direction: column; 
-    margin-top: 50px;
+    margin: 40px 10px;
 }
 
 .portfolio-details-page img {

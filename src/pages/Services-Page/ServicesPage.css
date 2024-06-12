@@ -61,7 +61,6 @@
 } */
 
 
-/* General Styling */
 .srevice-page-background {
     margin-top: 90px;
     width: 100%;
@@ -137,7 +136,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     .srevice-page-background {
         height: auto;
     }
@@ -150,12 +149,20 @@
         font-size: 14px;
     }
 
+    .web-development {
+        margin: 20px;
+
+    }
+
     .web-development h1 {
         font-size: 30px;
     }
 
     .item {
         width: 100%;
+    }
+    .item p {
+        letter-spacing: 1.2px;
     }
 }
 

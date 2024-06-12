@@ -113,6 +113,10 @@
         font-weight: 500;
         font-size: 25px;
     }
+    .list p{
+       text-align: center;
+       width: 90%;
+    }
 }
 @media (max-width: 840px) {
     .achievement{

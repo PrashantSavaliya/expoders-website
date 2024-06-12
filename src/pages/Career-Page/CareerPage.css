@@ -61,7 +61,7 @@
 .container .accordian-header {
     font-size: 25px; 
     padding-left: 10%; 
-    margin-top: 20px; 
+    margin: 20px 10px; 
     background: var(--black-color);
     color: var(--white-color);
 }
@@ -71,6 +71,7 @@
     font-size: 20px; 
     background: var(--black-color);
     color: var(--white-color);
+    margin: 20px 10px; 
 }
 
 .accordian-detail1 ul,
