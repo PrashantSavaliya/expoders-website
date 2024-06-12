@@ -1,6 +1,5 @@
 .client-review {
     margin-top: 50px;
-    /* height: 500px; */
 }
 
 .client-review .trustworthy {
@@ -29,8 +28,7 @@
     position: relative;
 }
 
-.left-btn,
-.right-btn {
+.left-btn, .right-btn {
     position: absolute;
     top: 50%;
     padding: 5px;
@@ -44,8 +42,7 @@
     transition: all ease 0.7s;
 }
 
-.left-btn:hover,
-.right-btn:hover {
+.left-btn:hover, .right-btn:hover {
     background: var(--orange-color);
     color: var(--black-color);
 }
@@ -53,15 +50,13 @@
 .right-btn {
     left: auto;
     right: 0;
-    /* margin-right: 100px; */
 }
 
 .left-btn {
     margin-left: -30px;
 }
 
-.left-btn.disabled,
-.right-btn.disabled {
+.left-btn.disabled, .right-btn.disabled {
     background: none;
     color: rgb(137, 137, 137);
     cursor: not-allowed;
@@ -76,7 +71,6 @@
     width: 250%;
     overflow-x: hidden;
     transition: all ease 0.7s;
-    /* transform: translateX(-80%); */
 }
 
 .slider ul li {
@@ -110,7 +104,11 @@
     font-size: 15px;
 }
 
-/*----------Media Query----------*/
+@media (max-width: 1200px){
+    .slider ul {
+        width: 495%;
+    }
+}
 
 @media (max-width: 640px){
     .client-review h1{

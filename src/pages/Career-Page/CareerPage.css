@@ -60,7 +60,6 @@
 
 .container .accordian-header {
     font-size: 25px; 
-    padding-left: 10%; 
     margin: 20px 10px; 
     background: var(--black-color);
     color: var(--white-color);

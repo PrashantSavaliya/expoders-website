@@ -192,6 +192,9 @@
     .serviceIcon {
         font-size: 30px;
     }
+    .service section{
+        margin: auto 10px auto 0px;
+    }
 }
 
 @media (max-width: 480px) {

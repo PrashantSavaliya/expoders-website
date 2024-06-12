@@ -55,7 +55,6 @@ nav ul li ul li:hover{
     display: none;
 }
 
-/*----------Media Query----------*/
 
 @media (max-width: 1200px){
     .logo{
@@ -92,7 +91,6 @@ nav ul li ul li:hover{
         width: 40px;
         cursor: pointer;
         font-size: 30px;
-        /* color: var(--orange-color); */
     }
     .hide-mobile-icon{
         right: -200px;

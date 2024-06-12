@@ -136,7 +136,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 840px) {
+@media (max-width: 768px) {
     .srevice-page-background {
         height: auto;
     }
