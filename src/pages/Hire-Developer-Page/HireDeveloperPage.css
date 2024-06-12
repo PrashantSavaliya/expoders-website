@@ -140,12 +140,14 @@
 }
 
 .checkboxes {
+    display: flex;
     flex-wrap: wrap; 
+    flex-direction: column;
     gap: 10px; 
 }
 
 .checkboxes label {
-    flex-basis: 45%; 
+    flex-basis: 5%; 
     margin-top: 5px;
 }
 

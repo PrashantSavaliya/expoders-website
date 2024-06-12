@@ -64,7 +64,7 @@ nav ul li ul li:hover{
         margin: 5px 10px;
     }
 }
-@media (max-width: 940px){
+@media (max-width: 950px){
     .logo{
         width: 80px;
     }

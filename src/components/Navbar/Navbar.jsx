@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Navbar.css';
 import expoders_img from '../../assets/Expoders_logo2.png';
 import { MdMenu } from "react-icons/md";
+import { FaCaretDown } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = ({ dark_nav }) => {
@@ -35,7 +36,7 @@ const Navbar = ({ dark_nav }) => {
           <Link to='/'>Home</Link>
         </li>
         <li className={isActive('/company')}>
-          <Link to='/company/about-expoders' onClick={closeMenu}>Company</Link>
+          <Link to='/company/about-expoders'>Company <FaCaretDown /></Link>
           <ul>
             <li className={isActive('/company/about-expoders')} onClick={closeMenu}><Link to='/company/about-expoders'>About Expoders</Link></li>
             <li className={isActive('/company/about-team')} onClick={closeMenu}><Link to='/company/about-team'>About Team</Link></li>
@@ -43,7 +44,7 @@ const Navbar = ({ dark_nav }) => {
           </ul>
         </li>
         <li className={isActive('/services')}>
-          <Link to='/services' onClick={closeMenu}>Service</Link>
+          <Link to='/services'>Service <FaCaretDown /></Link>
           <ul>
             <li onClick={closeMenu}><Link to='/services'>WEB DEVELOPMENT</Link></li>
             <li onClick={closeMenu}><Link to='/services'>MOBILE APP DEVELOPMENT</Link></li>
@@ -63,3 +64,53 @@ const Navbar = ({ dark_nav }) => {
 }
 
 export default Navbar
+
+
+// import React, { useEffect, useState } from 'react';
+// import { useLocation } from 'react-router-dom';
+// import DesktopNavbar from './DesktopNavbar';
+// import MobileNavbar from './MobileNavbar';
+// 
+// const Navbar = ({ dark_nav }) => {
+//   const [isMobile, setIsMobile] = useState(window.innerWidth < 950);
+//   const [MobileMenu, setMobileMenu] = useState(false);
+//   const location = useLocation();
+// 
+//   useEffect(() => {
+//     const handleResize = () => {
+//       setIsMobile(window.innerWidth < 950);
+//     };
+//     window.addEventListener('resize', handleResize);
+//     return () => window.removeEventListener('resize', handleResize);
+//   }, []);
+// 
+//   const toggleMenu = () => {
+//     setMobileMenu(!MobileMenu);
+//   };
+// 
+//   const closeMenu = () => {
+//     setMobileMenu(false);
+//   };
+// 
+//   const isActive = (path) => {
+//     return location.pathname === path || (path !== '/' && location.pathname.startsWith(path)) ? 'active' : '';
+//   };
+// 
+//   return isMobile ? (
+//     <MobileNavbar 
+//       MobileMenu={MobileMenu} 
+//       toggleMenu={toggleMenu} 
+//       closeMenu={closeMenu} 
+//       isActive={isActive} 
+//       dark_nav={dark_nav} 
+//     />
+//   ) : (
+//     <DesktopNavbar 
+//       closeMenu={closeMenu} 
+//       isActive={isActive} 
+//       dark_nav={dark_nav} 
+//     />
+//   );
+// };
+// 
+// export default Navbar;
