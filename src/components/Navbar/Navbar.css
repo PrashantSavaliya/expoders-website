@@ -1,111 +1,3 @@
-/* nav {
-    width: 100%;
-    color: aliceblue;
-    padding: 4px 0px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 10;
-}
-.logo {
-    width: 100px;
-}
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 5px 15px;
-    position: relative;
-    transition: all ease-in-out 0.2s;
-}
-nav ul li ul {
-    margin: 0;
-    padding: 0;
-    width: fit-content;
-    display: none;
-    position: absolute;
-    top: 100%;
-    background-color: var(--white-color);
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-nav ul li:hover ul {
-    display: block;
-}
-nav ul li:hover {
-    color: var(--orange-color);
-    cursor: pointer;
-}
-nav ul li ul li:hover {
-    color: var(--black-color);
-}
-.dark-nav {
-    background: var(--black-color);
-    transform: 0.5s;
-}
-.menu-icon {
-    display: none;
-}
-@media (max-width: 1200px) {
-    .logo {
-        width: 95px;
-    }
-    nav ul li {
-        margin: 5px 10px;
-    }
-}
-
-@media (max-width: 950px) {
-    .logo {
-        width: 80px;
-    }
-    nav {
-        padding: 15px 0;
-    }
-    nav ul {
-        position: fixed;
-        z-index: -1;
-        top: 0;
-        right: 0px;
-        bottom: 0;
-        transition: all ease 0.7s;
-        width: 200px;
-        padding-top: 70px;
-        background: var(--black-color);
-    }
-    nav ul li {
-        display: block;
-        margin: 25px 25px;
-    }
-    nav ul li ul {
-        position: static;
-        background-color: transparent;
-        box-shadow: none;
-        padding: 0;
-    }
-    nav ul li ul li {
-        margin: 0;
-    }
-    nav ul li ul li:hover {
-        color: inherit;
-    }
-    nav ul li:hover ul {
-        display: none;
-    }
-    .menu-icon {
-        display: block;
-        width: 40px;
-        cursor: pointer;
-        font-size: 30px;
-    }
-    .hide-mobile-icon {
-        right: -200px;
-    }
-} */
-
 nav {
     width: 100%;
     color: aliceblue;
@@ -200,9 +92,15 @@ nav ul li ul li:hover {
     nav ul li ul {
         position: static;
         background-color: transparent;
-        box-shadow: none;
-        padding: 0;
-        display: none;
+        border-radius: 1%;
+    }
+    .show{
+        border-radius: 2%;
+        height:fit-content;
+        margin: 10px;
+    }
+    .show li{
+        margin: 5px;
     }
     nav ul li ul.show {
         display: block;
