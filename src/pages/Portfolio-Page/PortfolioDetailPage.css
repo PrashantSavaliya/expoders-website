@@ -2,22 +2,24 @@
     flex-direction: column; 
     margin: 40px 10px;
 }
-
 .portfolio-details-page img {
     width: 100%; 
     height: auto;
     margin-bottom: 20px; 
 }
-
 .portfolio-detail-text {
     margin-left: 0; 
 }
-
 .portfolio-detail-text h2 {
     font-size: 30px; 
     margin-bottom: 10px;
 }
-
-.portfolio-detail-text h3, .portfolio-detail-text h4, .portfolio-detail-text p {
-    font-size: 16px; 
+    .portfolio-detail-text p{
+    letter-spacing: 1.2px;
+    font-size: 16px;
+    color: rgb(113, 113, 113);
+}
+.portfolio-span{
+    font-weight: 600;
+    font-variation-settings: 16px;
 }

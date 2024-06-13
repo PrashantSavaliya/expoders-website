@@ -45,7 +45,7 @@ const CareerPage = () => {
                             <li>- Experience in all phases of project life cycle Analysis, Design, Coding, Testing, deployment.</li>
                             <li>- Strong understanding of .NET client/server, .NET web and object oriented analysis & design.</li>
                         </ul>
-                        <p>Send Your Resume to <span>info@expoders.com</span></p>
+                        <p>Send Your Resume to <span><a href="mailto:info@expoders.com">info@expoders.com</a></span></p>
                     </AccordionDetails>
                 </Accordion>
                 <Accordion>
@@ -63,7 +63,7 @@ const CareerPage = () => {
                             <li>- Have ability to deploy web applications for staging usage.</li>
                             <li>- Develop User interfaces for Modern Rich Internet Applications with the latest Front End Technologies.</li>
                         </ul>
-                        <p>Send Your Resume to <span>info@expoders.com</span></p>
+                        <p>Send Your Resume to <span><a href="mailto:info@expoders.com">info@expoders.com</a></span></p>
                     </AccordionDetails>
                 </Accordion>
             </div>
