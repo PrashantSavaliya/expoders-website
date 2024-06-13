@@ -12,6 +12,7 @@
 .hire-developer-left h1 {
     font-size: 30px; 
     color: var(--orange-color);
+    margin: 10px auto;
 }
 
 .hire-developer-left p {
@@ -24,6 +25,7 @@
 
 .hire-developer-left h2 {
     font-size: 25px; 
+    margin: 15px auto;
     color: var(--orange-color);
 }
 

@@ -74,13 +74,13 @@
 
 .service-item ul h4 span {
     font-size: 25px;
-    padding-left: 10px;
+    padding-left: 5px;
     font-weight: 400;
 }
 
 .serviceIcon {
     color: var(--orange-color);
-    font-size: 35px;
+    font-size: 25px;
 }
 
 /*----------Media Query----------*/

@@ -50,7 +50,7 @@ const Services = () => {
                     </div>
                     <div className="service-item">
                         <ul>
-                            <h4> <IoSettingsOutline className="serviceIcon" /> <span> OTHERS IT Service</span> </h4>
+                            <h4> <IoSettingsOutline className="serviceIcon" /> <span> Others IT Service</span> </h4>
                             <li> <FaCheckCircle className="check-mark" /> Digital marketing & SEO </li>
                             <li> <FaCheckCircle className="check-mark" /> Database Server Migration </li>
                             <li> <FaCheckCircle className="check-mark" /> Technology Migration </li>
